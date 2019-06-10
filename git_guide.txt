@@ -1,0 +1,6 @@
+git add (filename) : 파일추가
+git add ./폴더이름/ :폴더와 하위 파일들을 추가
+
+git commit -m "메세지" : 메세지의 내용으로 지금까지 add한 파일을 commit
+
+git push origin master : master브랜치에 업로드
