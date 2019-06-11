@@ -1,16 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-typedef struct Stack_ele {
-	char* value; //if you want to change type of value, change parameter of Push().
-	struct Stack_ele* next; //self referential must to be like this "struct Stack_ele"
-}Stack_ele;
-
-typedef struct Stack{
-	int size;
-	int num_ele;
-	struct Stack_ele* top;
-}Stack;
+#include "mystack.h"
 
 
 void* CreateStack(int size) {
@@ -81,12 +71,4 @@ void Pop(Stack * a) {
 		free(node);
 		a->num_ele--;
 	}
-}
-
-int main() {
-	Stack * a = CreateStack(7);
-	for (int i = 1; i < 9; i++) {
-		Push(a, i);
-	}
-	return 0;
 }
