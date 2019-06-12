@@ -62,7 +62,7 @@ void Push(Stack* a, char* value) {
 
 void Pop(Stack * a) {
 	if(a->num_ele <= 0){
-		printf("There is no Element to be popped.\n");
+		printf("Stack Underflow\n");
 	}
 	else {
 		printf("%d,pop\n", a->top->value);
