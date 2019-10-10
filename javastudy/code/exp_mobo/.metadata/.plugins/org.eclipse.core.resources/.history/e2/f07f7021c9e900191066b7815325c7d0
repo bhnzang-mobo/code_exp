@@ -1,0 +1,7 @@
+package exp2;
+
+public class test5 {
+	protected static void test5_hi() {
+		System.out.println("I'm protected method!");
+	}
+}

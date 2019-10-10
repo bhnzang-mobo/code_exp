@@ -1,0 +1,5 @@
+package exp2;
+
+default class test4 {
+	public String mobo="I'm from another package"; //
+}

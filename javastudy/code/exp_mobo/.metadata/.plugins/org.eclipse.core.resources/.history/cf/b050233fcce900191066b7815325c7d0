@@ -1,0 +1,9 @@
+package exp2;
+
+public class test4 extends test5{ 
+	//if this class is declared as default(no access modifier), test1.java, which has imported test4.java, is not visible to test4.java
+	public String mobo="I'm from another package"; //
+	public static void main() {
+		
+	}
+}
