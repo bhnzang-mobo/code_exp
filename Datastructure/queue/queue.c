@@ -8,9 +8,10 @@ Queue* createQueue(int size) {
 	newQueue->front = NULL;
 	newQueue->rear = NULL;
 	newQueue->num = 0;
+	return newQueue;
 }
 
-void enQueue(Queue* queue, char* value) {
+void enQueue(Queue* queue, QData value) {
 	if (queue->rear ==NULL) {
 		Queuenode* node = malloc(sizeof(Queuenode));
 		node->value = value;
@@ -20,6 +21,7 @@ void enQueue(Queue* queue, char* value) {
 		queue->num += 1;
 		return;
 	}
+	if(queue->capacity > queue->num){
 	Queuenode* prevNode = queue->rear;
 	Queuenode* node = malloc(sizeof(Queuenode));
 	node->value = value;
@@ -28,20 +30,22 @@ void enQueue(Queue* queue, char* value) {
 	queue->rear = node;
 	queue->num += 1;
 	return;
+	}
+	printf("Queue is Full\n");
 }
 
-char* deQueue(Queue* queue) {
+QData deQueue(Queue* queue) {
 	if (queue->num > 1) {
 		Queuenode* node = queue->front;
-		char* retValue = node->value;
+		QData retValue = node->value;
 		queue->front = node->next;
 		free(node);
 		queue->num--;
 		return retValue;
 	}
-	else if (queue->num==1) {
+	if (queue->num==1) {
 		Queuenode* node = queue->front;
-		char* retValue = node->value;
+		QData retValue = node->value;
 		queue->front = node->next;
 		queue->rear = NULL;
 		free(node);
@@ -49,4 +53,17 @@ char* deQueue(Queue* queue) {
 		return retValue;
 	}
 	printf("Queue is empty\n");
+}
+void freeQueue(Queue* queue){
+	for(int i = 0 ; i < queue->num ; i ++){
+		deQueue(queue);
+	}	
+}
+
+Queuenode* getQFront(Queue* queue){
+	return queue->front;
+}
+
+Queuenode* getQRear(Queue* queue){
+	return queue->rear;
 }
