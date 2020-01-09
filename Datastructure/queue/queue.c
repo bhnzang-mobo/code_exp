@@ -2,13 +2,11 @@
 #include <stdlib.h>
 #include "myqueue.h"
 
-Queue* createQueue(int size) {
-	Queue * newQueue = (Queue*)malloc(sizeof(Queue));
+void initQueue(Queue* newQueue,int size) {
 	newQueue->capacity = size;
 	newQueue->front = NULL;
 	newQueue->rear = NULL;
 	newQueue->num = 0;
-	return newQueue;
 }
 
 void enQueue(Queue* queue, QData value) {
@@ -31,7 +29,6 @@ void enQueue(Queue* queue, QData value) {
 	queue->num += 1;
 	return;
 	}
-	printf("Queue is Full\n");
 }
 
 QData deQueue(Queue* queue) {
@@ -66,4 +63,24 @@ Queuenode* getQFront(Queue* queue){
 
 Queuenode* getQRear(Queue* queue){
 	return queue->rear;
+}
+
+int isFull(Queue queue){
+	if(queue.num>=queue.capacity){
+	printf("Queue is Full\n");
+	return 1;
+}
+	else{
+	return 0;
+}
+}
+
+int isEmpty(Queue queue){
+	if(queue.num<=0){
+	printf("Queue is Empty\n");
+	return 1;
+	}
+	else{
+	return 0;
+	}
 }

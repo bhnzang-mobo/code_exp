@@ -13,13 +13,14 @@ typedef struct Queuenode {
 	QData value;
 	struct Queuenode* next;
 }Queuenode;
-int isEmpty(Queue*);
-Queue* createQueue(int);
+
+void initQueue(Queue*,int);
 void enQueue(Queue* , QData);
 QData deQueue(Queue*);
 
 void freeQueue(Queue*);
 Queuenode* getQFront(Queue*);
 Queuenode* getQRear(Queue*);
-
+int isFull(Queue);
+int isEmpty(Queue);
 #endif
