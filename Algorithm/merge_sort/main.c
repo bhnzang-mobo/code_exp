@@ -1,29 +1,35 @@
 #include <stdio.h>
 void merge_sort(int * arr, int low, int high){
     if(low<high){
-        int left= low;
+
+        int left_btm= low;
         int tmp[high-low+1];
-        int q= (high+low-1)/2;
-        merge_sort(arr,low,q);
-        merge_sort(arr,q+1,high);
-        int k = q+1;
+        int mid= (high+low)/2;
+        int right_btm = mid+1;
         int i = 0;
-        while(low<=q && k<=high){
-            tmp[i++]=(arr[low]<arr[k])?arr[low++]:arr[k++];
+
+        //recursive pattern - making smallest piece
+        merge_sort(arr,low,mid);
+        merge_sort(arr,mid+1,high);
+
+        //generalization - from bottom to top
+        while(left_btm<=mid && right_btm<=high){
+            tmp[i++]=(arr[left_btm]<arr[right_btm])?arr[left_btm++]:arr[right_btm++];
         }
-        while(low<=q){
-            tmp[i++]=arr[low++];
+        while(left_btm<=mid){
+            tmp[i++]=arr[left_btm++];
         }
-        while (k<=high){
-            tmp[i++]=arr[k++];
+        while (right_btm<=high){
+            tmp[i++]=arr[right_btm++];
         }
-        for(int a = left; a<=high ; a++){
-            arr[a]=tmp[a-left];
+
+        for(int a = low; a<high+1 ; a++){
+            arr[a]=tmp[a-low];
         }
     }
 }
 int main() {
-    int arr[10]={1,2,3,8,8,7,5,43,45,13};
-    merge_sort(arr,0,9);
+    int arr[9]={1,2,3,8,8,7,5,43,41};
+    merge_sort(arr,0,8);
     return 0;
 }
