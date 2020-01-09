@@ -48,9 +48,5 @@ char* deQueue(Queue* queue) {
 		queue->num--;
 		return retValue;
 	}
-	else {
-		printf("Queue is empty.\n");
-		return;
-	}
-
+	printf("Queue is empty\n");
 }
