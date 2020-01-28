@@ -23,7 +23,7 @@ int main () {
 			printf("%d ",node.data);
 		}
 	}
-	printf("\n");
+	printf("\n");/*
 	if(nodnum!=0){
 		CFirst(&cl,&node);
 		if(node.data%2 == 0){
@@ -36,12 +36,19 @@ int main () {
 				CRemove(&cl);
 			}
 		}
-	}
+	}*/
 	if(CFirst(&cl,&node)){
 		printf("%d ",node.data);
 		for(int i = 0 ; i < CCount(&cl)-1; i++){
 			CNext(&cl,&node);
 			printf("%d ",node.data);
 		}
+	}
+	printf("\n");
+	int count = cl.count;
+	CFirst(&cl,&node);
+	for(int i = 0 ; i < count ; i ++){
+		printf("%d ",CRemove(&cl));
+		CNext(&cl,&node); //consequent removal is not approved
 	}
 }

@@ -7,7 +7,7 @@ void Cinit(CList* cl){
 	cl->tail=NULL;
 	cl->cur=NULL;
 	cl->before=NULL;
-	cl->count=0; //원래 int count = 0; 이었음 레일 미침 이것때매 한 시간 소모함 ㅈ같은거 모보현 씨발년
+	cl->count=0; //원래 int count = 0; 이었음 레일 미침 이것때매 한 시간 소모함
 }
 
 void Cinsert(CList* cl,Data data){
@@ -82,6 +82,16 @@ Data CRemove(CList* cl){ //remove current node
 		cl->cur=cl->before;
 		free(delnode);
 		cl->count-=1;
+		return ret;
+	}
+	else if(cl->cur!=NULL && cl->cur==cl->before){
+		CNode* delnode = cl->cur;
+		Data ret = delnode->data;
+		cl->cur=NULL;
+		cl->before=NULL;
+		cl->tail=NULL;
+		cl->count-=1;
+		free(delnode);
 		return ret;
 	}
 }
