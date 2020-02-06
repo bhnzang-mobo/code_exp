@@ -16,8 +16,8 @@ typedef struct Clist{
 
 //adding new node;
 void Cinit(CList*);
-void Cinsert(CList*,Data);	//insert data on head
-void CFinsert(CList*,Data);	//insert data on tail
+void Cinsert(CList*,Data);	//insert data on tail
+void CFinsert(CList*,Data);	//insert data on head(front)
 //node reference;
 int CFirst(CList*,CNode*);
 int CNext(CList*,CNode*);
