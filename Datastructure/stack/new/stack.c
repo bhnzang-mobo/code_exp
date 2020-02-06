@@ -10,9 +10,13 @@ void Push(Stack* stack, SData data){
 	SNode* newnode = (SNode*)malloc(sizeof(SNode));
 	newnode->data=data;
 	newnode->next=NULL;
+	/* original
 	if(!isEmpty(stack)){
 		newnode->next=stack->top;
 	}
+	*/
+	//modified
+	newnode->next=stack->top;
 	stack->top=newnode;
 	stack->count+=1;
 }
