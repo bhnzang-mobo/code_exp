@@ -47,11 +47,11 @@ ddata Fdequeue(deque* dq){
 	node * delnode = dq->front;
 	ddata ret = delnode->data;
 	dq->front=delnode->next;
-	if(dq->front==NULL){
+	if(dq->front==NULL){//one node left
 		dq->rear=NULL;
 	}
 	else{
-		dq->front->prev=NULL;
+		dq->front->prev=NULL;//two more nodes left
 	}
 	free(delnode);
 	dq->count-=1;
