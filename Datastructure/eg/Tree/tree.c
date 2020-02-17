@@ -33,3 +33,29 @@ void MakeRightSubTree(btNode* node, btNode* sub){
 	}
 	node->right=sub;
 }
+
+void PreorderTraverse(btNode* node, VisitAction action){
+	if(node==NULL){
+		return;
+	}
+	action(node->data);
+	PreorderTraverse(node->left,action);
+	PreorderTraverse(node->right,action);
+}
+void InorderTraverse(btNode* node, VisitAction action){
+	if(node==NULL){
+		return;
+	}
+	InorderTraverse(node->left,action);
+	action(node->data);
+	InorderTraverse(node->right,action);
+	
+}
+void PostorderTraverse(btNode* node, VisitAction action){
+	if(node==NULL){
+		return;
+	}
+	PostorderTraverse(node->left,action);
+	PostorderTraverse(node->right,action);
+	action(node->data);
+}

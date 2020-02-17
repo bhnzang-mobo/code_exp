@@ -8,6 +8,8 @@ typedef struct btNode{
 	struct btNode* right;
 }btNode;
 
+typedef void (*VisitAction)(btdata);
+
 btNode* MakeBTNode();
 btdata GetData(btNode*);
 void SetData(btNode*,btdata);
@@ -17,6 +19,10 @@ btNode* GetRightSubTree(btNode*);
 
 void MakeLeftSubTree(btNode*,btNode*);
 void MakeRightSubTree(btNode*,btNode*);
+
+void PreorderTraverse(btNode*, VisitAction action);
+void InorderTraverse(btNode*, VisitAction action);
+void PostorderTraverse(btNode*, VisitAction action);
 
 
 #endif
