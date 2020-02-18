@@ -24,5 +24,7 @@ int main(){
 	InorderTraverse(node[0],myaction);
 	printf("\n");
 	PostorderTraverse(node[0],myaction);
-
+	
+	DeleteTree(node[0]);
+	PostorderTraverse(node[0],myaction);
 }

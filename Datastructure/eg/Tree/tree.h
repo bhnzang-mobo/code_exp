@@ -24,5 +24,6 @@ void PreorderTraverse(btNode*, VisitAction action);
 void InorderTraverse(btNode*, VisitAction action);
 void PostorderTraverse(btNode*, VisitAction action);
 
-
+void DeleteTree(btNode*);
+void Delnode(btNode*);
 #endif

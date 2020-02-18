@@ -59,3 +59,20 @@ void PostorderTraverse(btNode* node, VisitAction action){
 	PostorderTraverse(node->right,action);
 	action(node->data);
 }
+void Delnode(btNode* node){
+	if(node==NULL){
+		return;
+	}	
+	Delnode(node->left);
+	Delnode(node->right);
+	free(node);
+}
+void DeleteTree(btNode* node){ //루트노드는 삭제되지 않음. 
+	if(node==NULL){
+		return;
+	}
+	Delnode(node->left);
+	Delnode(node->right);
+	node->left=NULL;
+	node->right=NULL; //삭제후 NULL할당 
+}
