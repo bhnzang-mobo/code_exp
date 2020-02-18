@@ -61,7 +61,15 @@ void ShowPrefixExp(btNode* node){
 	PreorderTraverse(node,ShowNode);
 }
 void ShowInfixExp(btNode* node){
-	InorderTraverse(node,ShowNode);
+	if(node->left==NULL){
+		ShowNode(node->data);
+		return;
+	}
+	printf("(");
+	ShowInfixExp(node->left);
+	ShowNode(node->data);
+	ShowInfixExp(node->right);
+	printf(")");
 }
 void ShowPostfixExp(btNode* node){
 	PostorderTraverse(node,ShowNode);
