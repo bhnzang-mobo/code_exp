@@ -1,6 +1,6 @@
 #include "sort.h"
 #include "heap.h"
-#include <malloc.h>
+
 void heap_sort(data arr[],Comparitor comp){
     int arr_len=5;
     heap hp;
@@ -78,3 +78,21 @@ void quick_sort(data arr[],int left,int right,Comparitor comp){
     }
 }
 
+void radix_sort(data arr[],int num,int maxlen,Bucket buck){
+    int i = 0;
+    int oper=1;
+    while(++i <= maxlen){
+        for(int j = 0 ; j < num ; j ++){
+            int what = arr[j]/oper%10;
+            enqueue(&buck.bucket[what],arr[j]);
+        }
+        
+        int tmp=0; //be careful on iteration : ..;j < num;.. (X)
+        for(int j = 0 ; j < buck.buck_num ; j ++){      
+            while(!isQEmpty(&buck.bucket[j])){
+                arr[tmp++] = dequeue(&buck.bucket[j]);
+            }
+        }
+        oper*=10;
+    }
+}
