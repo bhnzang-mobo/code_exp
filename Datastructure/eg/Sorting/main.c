@@ -4,7 +4,7 @@
 int comp(data a, data b){
     if(a>=b) return 0;
     else return 1;
-}
+} 
 
 int main(){
     data arr[20];
