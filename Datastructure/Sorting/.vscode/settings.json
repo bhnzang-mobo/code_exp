@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "sort.h": "c",
+        "stdio.h": "c",
+        "stdlib.h": "c",
+        "array": "cpp",
+        "string": "cpp",
+        "queue.h": "c"
+    }
+}
