@@ -1,5 +1,5 @@
 #ifndef __BINARY_TREE__
-#define __BINARY_TREE_
+#define __BINARY_TREE__
 typedef int btdata;
 
 typedef struct btNode{
