@@ -13,9 +13,7 @@ void GraphInit(ALGraph* al,int nv){//nv is index number.
     for(int i = 0 ; i < nv+1 ; i ++){//error : i < nv
         Dinit(&(al->list[i]));
     }
-    for(int i = 0 ; i < nv+1 ; i ++){
-        al->visitinfo[i]=0;
-    }
+
     
 }
 void AddEdge(ALGraph* al,int from ,int to){
@@ -60,7 +58,10 @@ int haveVisited(int list [], int k){
     if(list[k]==1) return 1;
     else return 0;
 }
-
+void VisitVert(ALGraph* al, int visit){
+    al->visitinfo[visit]=1;
+    printf("%c Refered.\n",'A'+visit);
+}
 
 void DFS(ALGraph* al,int start){
     DData next,origin;
@@ -68,15 +69,19 @@ void DFS(ALGraph* al,int start){
     Stack stack;
     int i = 0;
     start_obj=&(al->list[start]);
-
+    
     while(i < al->num_vert){
         DFirst(&(al->list[i]),&next);
         i++;
     }
 
+    for(int i = 0 ; i < al->num_vert ; i ++){
+        al->visitinfo[i]=0;
+    }
+
     Stackinit(&stack);
     Push(&stack,start);
-    printf("%c Refered.\n",'A'+start);
+    VisitVert(al,start);    
     origin=Peek(&stack);
     al->visitinfo[origin]=1;
 
@@ -90,16 +95,16 @@ void DFS(ALGraph* al,int start){
     obj=&(al->list[next]);
     printf("%c Refered.\n",'A'+next);
     */
+
     while(!isEmpty(&stack) || obj->cur->right!=obj->tail){
         origin=next;
-        al->visitinfo[origin]=1;
         DFirst(obj,&next);
         while(haveVisited(al->visitinfo,next)){//What's next?
             if(!DNext(obj,&next)) break;
         }
         if(!haveVisited(al->visitinfo,next)){ //Yes Next
             Push(&stack,origin);
-            printf("%c Refered.\n",'A'+next);
+            VisitVert(al,next);
             obj=&(al->list[next]);
             continue;
         }
@@ -110,4 +115,8 @@ void DFS(ALGraph* al,int start){
             }
         }
     }
+}
+
+void BFS(ALGraph* al, int start){
+
 }

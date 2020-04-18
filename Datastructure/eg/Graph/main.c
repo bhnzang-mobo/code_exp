@@ -2,14 +2,18 @@
 #include "graph.h"
 int main(){
     ALGraph al;
-    GraphInit(&al,E);
+    GraphInit(&al,G);
 
     AddEdge(&al,A,B);
-    AddEdge(&al,A,C);
+    AddEdge(&al,A,D);
     AddEdge(&al,B,C);
-    AddEdge(&al,B,D);
-    AddEdge(&al,C,E);
-    setbuf(stdout, NULL);
+    AddEdge(&al,C,D);
+    AddEdge(&al,D,E);
+    AddEdge(&al,E,F);
+    AddEdge(&al,E,G);
+
     DFS(&al,A);
+    printf("\n");
+    DFS(&al,C);
     return 0;
 }
