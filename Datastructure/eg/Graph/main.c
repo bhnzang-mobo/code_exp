@@ -9,8 +9,7 @@ int main(){
     AddEdge(&al,B,C);
     AddEdge(&al,B,D);
     AddEdge(&al,C,E);
-
-    ShowGraphInfo(&al);
-    
+    setbuf(stdout, NULL);
+    DFS(&al,A);
     return 0;
 }

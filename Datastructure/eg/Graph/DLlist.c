@@ -15,7 +15,6 @@ void Dinit(DList* dl){
 
 	hdmy->right=tdmy;
 	tdmy->left=hdmy;
-	
 	dl->head=hdmy;
 	dl->tail=tdmy;
 }
