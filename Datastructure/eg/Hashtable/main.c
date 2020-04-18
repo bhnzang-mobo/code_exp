@@ -10,6 +10,6 @@ int main (){
     tableinit(&mytable,hash);
     tableinsert(&mytable,157,"MOB");
     tableinsert(&mytable,257,"MOBO");
-    printf("%s",tabledelete(&mytable,257));
+    printf("%s",tabledelete(&mytable,157));
     return 0;
 }
