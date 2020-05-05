@@ -21,7 +21,7 @@ void Dinit(DList* dl){
 }
 
 int DFirst(DList* dl, DData* data){
-	if(dl->head->right==NULL){
+	if(dl->head->next==dl->tail){//fixed from dl->head->right==NULL;
 		return 0;
 	}
 	else{
