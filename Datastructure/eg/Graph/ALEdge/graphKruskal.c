@@ -1,7 +1,13 @@
 #include <stdio.h>
 #include <malloc.h>
-#include "graph.h"
+#include "graphKruskal.h"
 //enum value starts with 0. E = 4
+int PQWeightComp(Edge a, Edge b){ //int type? new Edge type?
+    if(b.weight>a.weight){
+        return 1;
+    }
+    return 0; //1: a>b 0 : a<b
+}
 void GraphInit(ALGraph* al,int nv){//nv is index number.
     al->num_vert=nv+1;
     al->num_edge=0;
@@ -13,15 +19,20 @@ void GraphInit(ALGraph* al,int nv){//nv is index number.
     for(int i = 0 ; i < nv+1 ; i ++){//error : i < nv
         Dinit(&(al->list[i]));
     }
-
+    PQueueInit(&(al->pque),PQWeightComp);
     
 }
-void AddEdge(ALGraph* al,int from ,int to){
+void AddEdge(ALGraph* al,int from ,int to, int weight){
     DList* obj = &(al->list[from]);
     Dinsert(obj,to);
     obj = &(al->list[to]);
     Dinsert(obj,from);
     al->num_edge++;
+    PQueue *pq = &(al->pque);
+    Edge data = {from,to,weight};
+
+    PEnqueue(pq,data);
+
 }
 void ShowGraphInfo(ALGraph* al){
     DData data;
@@ -64,14 +75,15 @@ void VisitVert(ALGraph* al, int visit){
 }
 
 void DFS(ALGraph* al,int start){
-    DData next,origin;
+    int next,origin;
+    DData data;
     DList * obj,*start_obj;
     Stack stack;
     int i = 0;
     start_obj=&(al->list[start]);
     
     while(i < al->num_vert){
-        DFirst(&(al->list[i]),&next);
+        DFirst(&(al->list[i]),&data);
         i++;
     }
 
@@ -119,7 +131,8 @@ void DFS(ALGraph* al,int start){
 
 void BFS(ALGraph* al, int start){
     //init
-    DData originV,nextV;
+    int originV,nextV;
+    DData data;
     DList* obj;
     queue alque;
     queueinit(&alque);
@@ -135,17 +148,81 @@ void BFS(ALGraph* al, int start){
     while(!isQEmpty(&alque)){
         nextV=dequeue(&alque);
         obj=&(al->list[nextV]);
-        DFirst(obj,&nextV);
-        if(!haveVisited(al->visitinfo,nextV)){
-            VisitVert(al,nextV);
-            enqueue(&alque,nextV);
-        }
-        while(DNext(obj,&nextV)){
+        if(DFirst(obj,&nextV)){
             if(!haveVisited(al->visitinfo,nextV)){
                 VisitVert(al,nextV);
                 enqueue(&alque,nextV);
             }
+            while(DNext(obj,&nextV)){
+                if(!haveVisited(al->visitinfo,nextV)){
+                    VisitVert(al,nextV);
+                    enqueue(&alque,nextV);
+                }
+            }
         }
     }
 
+}
+
+int isConnect(ALGraph* al){
+    BFS(al,A);
+    for(int i = 0 ; i < al->num_vert ; i ++){
+        if(al->visitinfo[i]==0){
+            return 0;
+        }
+    }
+    return 1;
+}
+
+void ConKruskal(ALGraph * al){
+    if(isPQEmpty(&(al->pque))){
+        return;
+    }
+    PQueue pq = al->pque;
+    
+    while(al->num_vert<al->num_edge+1){
+        //1.delete
+        PQData data = PDequeue(&pq);
+        int from = data.v1;
+        int to = data.v2;
+        int comp;
+        DFirst(&(al->list[from]),&comp);
+        if(to==comp){
+            DRemove(&(al->list[from]));
+        }
+        else{
+            while(DNext(&(al->list[from]),&comp)){
+                if(to==comp){
+                    DRemove(&(al->list[from]));
+                    break;
+                }
+            }  
+        }
+        DFirst(&(al->list[to]),&comp);
+        if(from==comp){
+            DRemove(&(al->list[to]));
+        }
+        else{
+            while(DNext(&(al->list[to]),&comp)){
+                if(from==comp){
+                    DRemove(&(al->list[to]));
+                    break;
+                }
+            }  
+        }
+        al->num_edge--;
+        //2.connection test
+        if(isConnect(al)){
+            continue;
+        }
+        else{
+            DList* obj = &(al->list[from]);
+            Dinsert(obj,to);
+            obj = &(al->list[to]);
+            Dinsert(obj,from);
+            al->num_edge++;
+        }
+        //2.1 success = continue
+        //2.2 fail = undo delete and continue
+    }
 }

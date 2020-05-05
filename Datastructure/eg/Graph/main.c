@@ -6,14 +6,14 @@ int main(){
 
     AddEdge(&al,A,B);
     AddEdge(&al,A,D);
-    AddEdge(&al,B,C);
+    AddEdge(&al,A,C);
     AddEdge(&al,C,D);
     AddEdge(&al,D,E);
     AddEdge(&al,E,F);
     AddEdge(&al,E,G);
-
+    printf("Depth First Search\n");
     DFS(&al,A);
     printf("\n");
-    DFS(&al,C);
+    DFS(&al,D);
     return 0;
 }
