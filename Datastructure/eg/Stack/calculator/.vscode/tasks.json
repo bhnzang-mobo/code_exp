@@ -9,9 +9,9 @@
             "command": "C:\\MinGW\\bin\\gcc.exe",
             "args": [
                 "-g",
-                "${fileDirname}\\*.c",
+                "${workspaceFolder}\\*.c",
                 "-o",
-                "${fileDirname}\\test.exe"
+                "${fileDirname}\\test2.exe"
             ],
             "options": {
                 "cwd": "C:\\MinGW\\bin"
@@ -19,7 +19,21 @@
             "problemMatcher": [
                 "$gcc"
             ],
-            "group": "build"
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        // 바이너리 실행(Windows)
+        {
+            "label": "execute",
+            "command": "cmd",
+            "group": "test",
+            "args": [
+                "/C", "${fileDirname}\\${fileBasenameNoExtension}"
+            ]
+
         }
     ]
+
 }

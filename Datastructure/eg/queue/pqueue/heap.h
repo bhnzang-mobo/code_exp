@@ -1,7 +1,7 @@
 #ifndef __HEAP__
 #define __HEAP__
 #define heaplen 100
-typedef char Hdata;
+typedef int Hdata;
 typedef int Priority;
 typedef int (*Prioritycomp)(Hdata,Hdata);
 

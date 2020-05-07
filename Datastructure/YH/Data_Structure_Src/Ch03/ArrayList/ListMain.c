@@ -6,48 +6,29 @@ int main(void)
 	/*** ArrayList의 생성 및 초기화 ***/
 	List list;
 	int data;
+	int sum=0;
 	ListInit(&list);
-
-	/*** 5개의 데이터 저장 ***/
-	LInsert(&list, 11);  LInsert(&list, 11);
-	LInsert(&list, 22);  LInsert(&list, 22);
-	LInsert(&list, 33);
-
-	/*** 저장된 데이터의 전체 출력 ***/
-	printf("현재 데이터의 수: %d \n", LCount(&list));
-
-	if(LFirst(&list, &data))    // 첫 번째 데이터 조회
-	{
-		printf("%d ", data);
-		
-		while(LNext(&list, &data))    // 두 번째 이후의 데이터 조회
-			printf("%d ", data);
+	for(int i = 1 ; i <= 9 ; i ++){
+		LInsert(&list,i);
 	}
-	printf("\n\n");
-
-	/*** 숫자 22을 탐색하여 모두 삭제 ***/
-	if(LFirst(&list, &data))
-	{
-		if(data == 22)
+	LFirst(&list,&data);
+	sum+=data;
+	for(int i = 1 ; i < 9 ; i ++){
+		LNext(&list,&data);
+		sum+=data;
+	}
+	printf("총 합은 %d 입니다.\n",sum);
+	LFirst(&list,&data);
+	for(int i = 0 ; i < 9 ; i ++){
+		if(data%2==0 || data%3==0){
 			LRemove(&list);
-		
-		while(LNext(&list, &data))
-		{
-			if(data == 22)
-				LRemove(&list);
 		}
+		LNext(&list,&data);
 	}
-
-	/*** 삭제 후 저장된 데이터 전체 출력 ***/
-	printf("현재 데이터의 수: %d \n", LCount(&list));
-
-	if(LFirst(&list, &data))
-	{
-		printf("%d ", data);
-		
-		while(LNext(&list, &data))
-			printf("%d ", data);
+	LFirst(&list,&data);
+	for(int i = 0 ; i < LCount(&list) ; i ++){
+		printf("%d ",data);
+		LNext(&list,&data);
 	}
-	printf("\n\n");
 	return 0;
 }

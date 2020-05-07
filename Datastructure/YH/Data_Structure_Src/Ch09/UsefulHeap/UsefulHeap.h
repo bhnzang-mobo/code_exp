@@ -4,14 +4,14 @@
 #define TRUE	1
 #define FALSE	0
 
-/*** HeapÀÇ Á¤ÀÇ ****/
+/*** Heapï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ****/
 #define HEAP_LEN	100
 
 typedef char HData;
 
-// d1ÀÇ ¿ì¼±¼øÀ§°¡ ³ô´Ù¸é 0º¸´Ù Å« °ª
-// d2ÀÇ ¿ì¼±¼øÀ§°¡ ³ô´Ù¸é 0º¸´Ù ÀÛÀº °ª
-// d1°ú d2ÀÇ ¿ì¼±¼øÀ§°¡ °°´Ù¸é 0À» ¹ÝÈ¯
+// d1ï¿½ï¿½ ï¿½ì¼±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ù¸ï¿½ 0ï¿½ï¿½ï¿½ï¿½ Å« ï¿½ï¿½
+// d2ï¿½ï¿½ ï¿½ì¼±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ù¸ï¿½ 0ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½
+// d1ï¿½ï¿½ d2ï¿½ï¿½ ï¿½ì¼±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ù¸ï¿½ 0ï¿½ï¿½ ï¿½ï¿½È¯
 typedef int PriorityComp(HData d1, HData d2);
 
 typedef struct _heap
@@ -21,7 +21,7 @@ typedef struct _heap
 	HData heapArr[HEAP_LEN];
 } Heap;
 
-/*** Heap °ü·Ã ¿¬»êµé ****/
+/*** Heap ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ****/
 void HeapInit(Heap * ph, PriorityComp pc);
 int HIsEmpty(Heap * ph);
 

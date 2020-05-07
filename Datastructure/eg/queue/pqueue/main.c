@@ -1,31 +1,35 @@
 #include <stdio.h>
 #include <malloc.h>
-#include "heap.h"
+#include <string.h>
+#include "pqueue.h"
 int Datacomp(Hdata a, Hdata b){
-    if(a<b) return 0;
+    if(a>b) return 0;
     else return 1;
 }
 
 
 int main(){
-    heap  hp;
-    heapinit(&hp,Datacomp);
+    PQueue hp;
+    PQueueIint(&hp,Datacomp);
     printf("%d\n",isheapEmpty(&hp));
-    char data = 'A';
-    heapinsert(&hp,data);
-    heapinsert(&hp,data+1);
-    heapinsert(&hp,data+2);
-    heapinsert(&hp,data+3);
-    heapinsert(&hp,data+4);
-    heapinsert(&hp,data+5);
+    PEnqueue(&hp,9);
+    PEnqueue(&hp,2);
+    PEnqueue(&hp,12);
+    PEnqueue(&hp,8);
+    PEnqueue(&hp,6);
+    PEnqueue(&hp,111);
+    PEnqueue(&hp,4);
+    PEnqueue(&hp,3);
+    PEnqueue(&hp,7);
+    PEnqueue(&hp,13);
     /*
     for(int i = 0 ; i < 6 ; i ++){
-        heapinsert(&hp,data+i,i-2*(i%2)+1);
+        PEnqueue(&hp,data+i,i-2*(i%2)+1);
         printf("pr = %d, %c \n",i-2*(i%2)+1,data+i);
     }
     */
 
     while(!isheapEmpty(&hp)){
-        printf("%c",heapDelete(&hp));
+        printf("%d ",PDequeue(&hp));
     }
 }

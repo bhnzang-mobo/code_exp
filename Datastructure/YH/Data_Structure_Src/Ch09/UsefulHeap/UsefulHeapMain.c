@@ -10,7 +10,7 @@ int DataPriorityComp(char ch1, char ch2)
 int main(void)
 {
 	Heap heap;
-	HeapInit(&heap, DataPriorityComp);
+	HeapInit(&heap, &DataPriorityComp);
 
 	HInsert(&heap, 'A');
 	HInsert(&heap, 'B');
