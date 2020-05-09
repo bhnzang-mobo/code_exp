@@ -2,8 +2,8 @@
 #include "sort.h"
 
 int comp(data a, data b){
-    if(a>=b) return 0;
-    else return 1;
+    if(a>=b) return 1;
+    else return 0;
 } 
 
 int main(){
@@ -11,6 +11,7 @@ int main(){
     for(int i = 0 ; i < 20 ; i ++){
         arr[i]=rand()%1000;
     }
+    /*
     Bucket buck;
     buck.buck_num=10;
     buck.bucket=(queue*)malloc(sizeof(queue)*buck.buck_num);
@@ -19,6 +20,8 @@ int main(){
         queueinit(&buck.bucket[j]);
     }    //arr, num of data,max len of data
     radix_sort(arr,20,3,buck);
+    */
+    heap_sort(arr,comp);
     for(int i = 0 ; i < 20 ; i ++){
         printf("%d ",arr[i]);
     }

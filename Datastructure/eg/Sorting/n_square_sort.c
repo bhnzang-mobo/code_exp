@@ -1,7 +1,7 @@
 #include "sort.h"
 
 void bubble_sort(int a[],Comparitor comp){
-    int arr_len =5;
+    int arr_len =20;
     while(arr_len--)
     for(int i = 0 ; i < arr_len ; i ++){
         int  tmp = a[i];
@@ -13,7 +13,7 @@ void bubble_sort(int a[],Comparitor comp){
 }
 
 void selection_sort(int arr [],Comparitor comp){
-    int arr_len = 5;
+    int arr_len = 20;
     for(int i = 0 ; i < arr_len ; i ++){
         int min =i;
         int tmp=arr[i];
@@ -29,7 +29,7 @@ void selection_sort(int arr [],Comparitor comp){
 
 
 void insertion_sort(int arr[], Comparitor comp){
-    int arr_len=5;
+    int arr_len=20;
     int idx= 1;
     while(idx<arr_len){
         int idx2 = idx; 

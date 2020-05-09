@@ -2,7 +2,7 @@
 #include "heap.h"
 
 void heap_sort(data arr[],Comparitor comp){
-    int arr_len=5;
+    int arr_len=20;
     heap hp;
     heapinit(&hp,comp);
     for(int i = 0 ; i < arr_len ; i ++){

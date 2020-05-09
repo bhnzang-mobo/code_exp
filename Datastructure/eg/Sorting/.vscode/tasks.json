@@ -3,13 +3,13 @@
     "tasks": [
         {
             "type": "shell",
-            "label": "gcc.exe build active file",
+            "label": "Build",
             "command": "C:\\MinGW\\bin\\gcc.exe",
             "args": [
                 "-g",
                 "${fileDirname}\\*.c",
                 "-o",
-                "${fileDirname}\\test.exe"
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
             "options": {
                 "cwd": "C:\\MinGW\\bin"
@@ -18,6 +18,26 @@
                 "$gcc"
             ],
             "group": "build"
+        },
+        {
+            "type": "shell",
+            "label": "test",
+            "command": "${fileBasenameNoExtension}.exe",
+            "group": "test"
+        },
+        {
+            "type": "shell",
+            "label": "gcc.exe build active file",
+            "command": "C:\\MinGW\\bin\\gcc.exe",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "C:\\MinGW\\bin"
+            }
         }
     ]
 }
