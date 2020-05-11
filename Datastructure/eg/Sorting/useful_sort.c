@@ -73,7 +73,7 @@ void quick_sort(data arr[],int left,int right,Comparitor comp){
         arr[low-1]=arr[pivot];
         arr[pivot]=tmp;
         //
-        quick_sort(arr,left,low-2,comp);
+        quick_sort(arr,left,low-2,comp);// modified from quick_sort(arr,left,low-1,comp);
         quick_sort(arr,low,right,comp);
     }
 }
