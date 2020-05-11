@@ -21,7 +21,7 @@ int main(){
     }    //arr, num of data,max len of data
     radix_sort(arr,20,3,buck);
     */
-    heap_sort(arr,comp);
+    quick_sort(arr,0,19,comp);
     for(int i = 0 ; i < 20 ; i ++){
         printf("%d ",arr[i]);
     }

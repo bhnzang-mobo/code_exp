@@ -35,15 +35,15 @@ void merge_sort(data arr[],int left,int right,Comparitor comp){
                 tmparr[i++]=arr[rhand++];
             }
         }
-        while(lhand<=mid && i <= right-left){
+        while(lhand<=mid && i < right-left + 1){
             tmparr[i++]=arr[lhand++];
         }
-        while(rhand<=right && i <= right-left){
+        while(rhand<=right && i < right-left + 1){
             tmparr[i++]=arr[rhand++];
         }
 
         //MERGE
-        for(int a = 0 ; a < right-left+1 ; a++){
+        for(int a = 0 ; a < right-left+1 ; a++){//from arr[left] to arr[right] 
             arr[a+left]=tmparr[a]; 
         }
     }
@@ -59,7 +59,7 @@ void quick_sort(data arr[],int left,int right,Comparitor comp){
             while(comp(arr[low],arr[pivot])&&low<=high){
                 low++;
             }
-            while(comp(arr[pivot],arr[high])&&low<=high+1){
+            while(comp(arr[pivot],arr[high])&&left+1<=high){
                 high--;
             }
             if(low<high){
@@ -73,7 +73,7 @@ void quick_sort(data arr[],int left,int right,Comparitor comp){
         arr[low-1]=arr[pivot];
         arr[pivot]=tmp;
         //
-        quick_sort(arr,left,low-1,comp);
+        quick_sort(arr,left,low-2,comp);
         quick_sort(arr,low,right,comp);
     }
 }
