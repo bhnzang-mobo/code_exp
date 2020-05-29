@@ -9,7 +9,7 @@
                 "-g",
                 "${fileDirname}\\*.c",
                 "-o",
-                "${fileDirname}\\test.exe"
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
             "options": {
                 "cwd": "C:\\MinGW\\bin"
@@ -22,7 +22,7 @@
         {
             "type": "shell",
             "label": "Test Execute",
-            "command": "test.exe",
+            "command": "${fileBasenameNoExtension}.exe",
             "group": "test"
         },
         {
@@ -33,7 +33,7 @@
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}\\test.exe"
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
             "options": {
                 "cwd": "C:\\MinGW\\bin"

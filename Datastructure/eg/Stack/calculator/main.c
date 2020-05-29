@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <ctype.h>
-#include "stack.h"
+#include "In2Post.h"
+
 int comp(char a, char b){
     int ak,bk;
     if(a=='+'||a=='-'){
@@ -22,7 +22,7 @@ int comp(char a, char b){
         return 0;
     }
 }
-int main(){
+int main(){/*
     Stack stack;
     Stackinit(&stack);
     char eq[100];
@@ -63,5 +63,10 @@ int main(){
     }
     ret[j]='\0';
     printf("%s",ret);
+    */
+    char exp [200];
+    scanf("%s",exp);
+    In2Post(exp);
+    printf("%s",exp);
     return 0;
 }

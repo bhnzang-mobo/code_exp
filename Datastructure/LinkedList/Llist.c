@@ -4,7 +4,7 @@
 
 void LLinit(LinkedList* LL){
 	LL->count=0;
-	LL->head=(LLNode*)malloc(sizeof(LLNode));
+	LL->head=(LLNode*)malloc(sizeof(LLNode));//dummy node
 	LL->head->next=NULL;
 	LL->tail=LL->head;
 	LL->cur=LL->head;
@@ -30,7 +30,7 @@ void LLinsert(LinkedList * LL, LLData data){
 	else{	//Sinsert
 		LLNode* com = LL->head;
 		int (*comp)(LLData,LLData)=LL->comp;
-		while(com->next!=NULL && comp(data,com->next->data)==1){
+		while(com->next!=NULL && comp(data,com->next->data)==0){
 			com=com->next;
 		}
 		node->next=com->next;
