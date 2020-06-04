@@ -11,7 +11,6 @@ int Datacomp(Hdata a, Hdata b){
 int main(){
     PQueue hp;
     PQueueIint(&hp,Datacomp);
-    printf("%d\n",isheapEmpty(&hp));
     PEnqueue(&hp,9);
     PEnqueue(&hp,2);
     PEnqueue(&hp,12);
