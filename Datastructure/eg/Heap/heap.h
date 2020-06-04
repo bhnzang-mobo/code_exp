@@ -1,9 +1,9 @@
 #ifndef __HEAP__
 #define __HEAP__
 #define heaplen 100
-typedef char* Hdata;
-typedef int Priority;
-typedef int (*Prioritycomp)(Hdata,Hdata);
+typedef int Hdata;
+typedef Hdata Priority;
+typedef int (*Prioritycomp)(Priority,Priority);
 
 
 typedef struct heap{
