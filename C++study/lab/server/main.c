@@ -33,7 +33,6 @@ int main(){
     client_addr_size = sizeof(client_addr);
     client_socket = accept(server_socket,(struct sockaddr*)&client_addr,&client_addr_size);//from connect func from client
     printf("Connection Accepted\n");
-    send(client_socket, " ", 1024, 0);
     while(1){
         if(recv(client_socket, message,1024, 0)>0){
             printf("%s\n",message);
