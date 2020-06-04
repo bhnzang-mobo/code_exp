@@ -3,7 +3,7 @@
 #define heaplen 100
 typedef int Hdata;
 typedef Hdata Priority;
-typedef int (*Prioritycomp)(Hdata,Hdata);
+typedef int (*Prioritycomp)(Priority,Priority);
 
 
 typedef struct heap{
