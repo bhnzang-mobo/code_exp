@@ -8,8 +8,9 @@ typedef qdata data;
 typedef int(*Comparitor)(data, data);//0 for left, 1 for right one is bigger
 typedef int(*buck_idx)(data);
 typedef struct __bucket{
-    int buck_num;
+    int numofradix;
     queue* bucket;
+    int (*buckindex)(data,data);
 }Bucket;
 
 void bubble_sort(data[], Comparitor comp);

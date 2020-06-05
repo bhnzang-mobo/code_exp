@@ -23,7 +23,7 @@ void merge_sort(data arr[],int left,int right,Comparitor comp){
         //CONQURE
         int lhand = left;
         int rhand = mid+1;
-        data *tmparr=(data*)malloc(sizeof(data)*right-left+1);
+        data *tmparr=(data*)malloc(sizeof(data)*(right-left+1));
         int i = 0 ;
 
 
@@ -56,10 +56,10 @@ void quick_sort(data arr[],int left,int right,Comparitor comp){
         int low = left+1;
         int high = right;
         while(low<high){
-            while(comp(arr[low],arr[pivot])&&low<=high){
+            while(comp(arr[low],arr[pivot])&&low<=right){//low must not bigger than right
                 low++;
             }
-            while(comp(arr[pivot],arr[high])&&left+1<=high){
+            while(comp(arr[pivot],arr[high])&&left+1<=high){//high must not smaller than left+1
                 high--;
             }
             if(low<high){
@@ -81,14 +81,22 @@ void quick_sort(data arr[],int left,int right,Comparitor comp){
 void radix_sort(data arr[],int num,int maxlen,Bucket buck){
     int i = 0;
     int oper=1;
+    buck.bucket=(queue*)malloc(sizeof(queue)*buck.numofradix);
+    //be careful on iteration : ..;j < num;.. (X) 
+    for(int j = 0 ; j < buck.numofradix ; j ++){
+        queueinit(&buck.bucket[j]);
+    }    //arr, num of data,max len of data
+    int (*buckidx)(data a ,data b);
+    buckidx=buck.buckindex;
+    
     while(++i <= maxlen){
         for(int j = 0 ; j < num ; j ++){
-            int what = arr[j]/oper%10;
+            int what = buckidx(arr[j],oper);
             enqueue(&buck.bucket[what],arr[j]);
         }
         
         int tmp=0; //be careful on iteration : ..;j < num;.. (X)
-        for(int j = 0 ; j < buck.buck_num ; j ++){      
+        for(int j = 0 ; j < buck.numofradix ; j ++){      
             while(!isQEmpty(&buck.bucket[j])){
                 arr[tmp++] = dequeue(&buck.bucket[j]);
             }
