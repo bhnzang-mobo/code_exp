@@ -46,6 +46,7 @@ void merge_sort(data arr[],int left,int right,Comparitor comp){
         for(int a = 0 ; a < right-left+1 ; a++){//from arr[left] to arr[right] 
             arr[a+left]=tmparr[a]; 
         }
+        free(tmparr);
     }
 
 }
