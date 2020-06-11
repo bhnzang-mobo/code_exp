@@ -12,8 +12,11 @@ void BSTinsert(btNode** bstroot,bstdata data){
         *bstroot = nnode;
     }
     else{
-        btNode * next= cnode->data>data?GetLeftSubTree(cnode):GetRightSubTree(cnode);
+        btNode * next= cnode;
         while(next!=NULL){
+            if(cnode->data == data){//Primary Key
+                return;
+            }
             cnode = next;
             next= cnode->data>data?GetLeftSubTree(cnode):GetRightSubTree(cnode);
         }
@@ -29,6 +32,9 @@ bstdata BSTGetNodeData(btNode* bstroot){
     return bstroot->data;
 }
 btNode* BSTsearch(btNode* bst,bstdata data){
+    if(bst==NULL){
+        return;
+    }
     if(bst->data==data){
         return bst;
     }
@@ -48,7 +54,7 @@ void BSTdelete(btNode** bst, bstdata data){
     btNode* delnode, *delpnode;
     delpnode=*bst;
     delnode= delpnode;
-    while(delnode->data!=data){
+    while(delnode !=NULL && delnode->data!=data){
         delpnode=delnode;
         delnode= delpnode->data>data?GetLeftSubTree(delpnode):GetRightSubTree(delpnode);
     }
@@ -73,6 +79,10 @@ void BSTdelete(btNode** bst, bstdata data){
         delnode->data=BSTRemoveNode(prepnode,repnode);
     }
     else{
+        if(delpnode==delnode){
+            *bst=NULL;
+            return;
+        }
         if(delpnode->data<delnode->data){
             MakeRightSubTree(delpnode,delnode->left);
         }
