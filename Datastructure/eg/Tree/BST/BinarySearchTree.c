@@ -33,7 +33,7 @@ bstdata BSTGetNodeData(btNode* bstroot){
 }
 btNode* BSTsearch(btNode* bst,bstdata data){
     if(bst==NULL){
-        return;
+        return NULL;
     }
     if(bst->data==data){
         return bst;
@@ -60,6 +60,7 @@ void BSTdelete(btNode** bst, bstdata data){
     }
     //Replace node search
     btNode* repnode,* prepnode;
+    
     if(delnode->left!=NULL){
         prepnode=delnode;
         repnode=prepnode->left;

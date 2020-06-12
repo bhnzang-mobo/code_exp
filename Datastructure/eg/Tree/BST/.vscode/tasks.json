@@ -3,7 +3,7 @@
     "tasks": [
         {
             "type": "shell",
-            "label": "gcc.exe build active file",
+            "label": "Build",
             "command": "C:\\MinGW\\bin\\gcc.exe",
             "args": [
                 "-g",
@@ -18,6 +18,12 @@
                 "$gcc"
             ],
             "group": "build"
+        },
+        {
+            "type": "shell",
+            "label": "Test Execute",
+            "command": "test.exe",
+            "group": "test"
         }
     ]
 }

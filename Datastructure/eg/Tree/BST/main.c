@@ -6,7 +6,7 @@ int main(){
     btNode * sNode;
 
     BSTinit(&bstroot);
-
+    sNode=NULL;
     BSTinsert(&bstroot,12);
     BSTinsert(&bstroot,8);
     BSTinsert(&bstroot,4);
@@ -16,8 +16,9 @@ int main(){
     BSTinsert(&bstroot,13);
     
     BSTdelete(&bstroot,12);
+    sNode=BSTsearch(bstroot,12);
     if(sNode==NULL){
-        printf("탐색실패");
+        printf("Fail\n");
     }
     else{
         printf("%d",sNode->data);
