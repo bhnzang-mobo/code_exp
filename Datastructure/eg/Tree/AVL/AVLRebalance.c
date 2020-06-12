@@ -36,11 +36,11 @@ void __LL(btNode ** bt){
     MakeLeftSubTree((*bt)->right,tmp); //when root's left is not null, it had been removed in MakeLeft(Right)SubTree.
 }
 void __LR(btNode ** bt){
-    __RR(&((*bt)->right));
+    __RR(&((*bt)->left));
     __LL(bt);
 }
 void __RL(btNode ** bt){
-    __LL(&((*bt)->left));
+    __LL(&((*bt)->right));
     __RR(bt);
 }
 void Rebalancing(btNode** btroot){
