@@ -2,7 +2,7 @@
 #define __SLOT__
 
 typedef int Key;
-typedef int Value;
+typedef char* Value;
 
 
 typedef struct __slot{

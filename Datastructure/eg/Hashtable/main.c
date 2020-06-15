@@ -8,7 +8,7 @@ int hash(Key key){
 int main (){
     Table mytable;
     tableinit(&mytable,hash);
-    tableinsert(&mytable,157,"MOB");
+    tableinsert(&mytable,157,"HYEON");
     tableinsert(&mytable,257,"MOBO");
     printf("%s",tabledelete(&mytable,157));
     return 0;

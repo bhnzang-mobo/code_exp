@@ -20,11 +20,8 @@ Value tabledelete(Table* table,Key key){
     DList* slot = &(table->table[table->hs(key)]);
     DData data;
     if(DFirst(slot,&data)){
-        if(data.key==key){//when First is the node
-            return DRemove(slot).value;
-        }
-        while(data.key!=key && DNext(slot,&data))
-        return DRemove(slot).value;
+        while(data.key!=key && DNext(slot,&data));
+    return DRemove(slot).value;
     }
 }
 Value tablesearch(Table* table,Key key){
