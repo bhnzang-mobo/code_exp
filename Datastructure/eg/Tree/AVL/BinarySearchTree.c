@@ -88,7 +88,12 @@ btNode* BSTdelete(btNode** bst, bstdata data){
             MakeRightSubTree(delpnode,delnode->left);
         }
         else{
-            MakeLeftSubTree(delpnode,delnode->left);
+            if(delpnode==delnode){
+                *bst=NULL;
+            }
+            else{
+                MakeLeftSubTree(delpnode,delnode->left);
+            }
         }
         
         return delnode;

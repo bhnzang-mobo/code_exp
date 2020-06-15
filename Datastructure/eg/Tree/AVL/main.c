@@ -8,18 +8,14 @@ int main(){
     BSTinit(&bstroot);
 
     BSTinsert(&bstroot,3);
-    BSTinsert(&bstroot,1);
-    BSTinsert(&bstroot,2);
-    BSTinsert(&bstroot,5);
     BSTinsert(&bstroot,4);
-    
-    sNode = BSTsearch(&bstroot,4);
+    BSTdelete(&bstroot,4);
     if(sNode==NULL){
         printf("탐색실패");
     }
     else{
         printf("%d ",sNode->data);
     }
-    printf("\n%d ",BSTbalancefactor(&sNode));
+    printf("\n%d ",BSTbalancefactor(&bstroot));
     return 0;
 }
