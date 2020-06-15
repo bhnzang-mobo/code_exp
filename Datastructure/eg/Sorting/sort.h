@@ -10,7 +10,6 @@ typedef int(*buck_idx)(data);
 typedef struct __bucket{
     int numofradix;
     queue* bucket;
-    int (*buckindex)(data,data);
 }Bucket;
 
 void bubble_sort(data[], Comparitor comp);

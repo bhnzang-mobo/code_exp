@@ -83,17 +83,17 @@ void radix_sort(data arr[],int num,int maxlen,Bucket buck){
     int i = 0;
     int oper=1;
     buck.bucket=(queue*)malloc(sizeof(queue)*buck.numofradix);
+    
     //be careful on iteration : ..;j < num;.. (X) 
     for(int j = 0 ; j < buck.numofradix ; j ++){
         queueinit(&buck.bucket[j]);
     }    //arr, num of data,max len of data
-    int (*buckidx)(data a ,data b);
-    buckidx=buck.buckindex;
     
+
     while(++i <= maxlen){
         for(int j = 0 ; j < num ; j ++){
-            int what = buckidx(arr[j],oper);
-            enqueue(&buck.bucket[what],arr[j]);
+            int idx = arr[j]/oper%10;
+            enqueue(&buck.bucket[idx],arr[j]);
         }
         
         int tmp=0; //be careful on iteration : ..;j < num;.. (X)
