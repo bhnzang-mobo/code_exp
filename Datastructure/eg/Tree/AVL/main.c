@@ -8,11 +8,8 @@ int main(){
     BSTinit(&bstroot);
 
     BSTinsert(&bstroot,3);
-    BSTinsert(&bstroot,4);
     BSTinsert(&bstroot,5);
-    BSTinsert(&bstroot,6);
-    BSTinsert(&bstroot,1);
-    BSTinsert(&bstroot,2);
+    BSTinsert(&bstroot,4);
 
     BSTdelete(&bstroot,4);
     BSTdelete(&bstroot,3);

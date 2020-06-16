@@ -64,7 +64,7 @@ void Rebalancing(btNode** btroot){
             }
             else{
                 count-=2;
-                if(BSTbalancefactor(&((*btroot)->left))>=0){
+                if(BSTbalancefactor(&((*btroot)->right))>=0){
                     count+=1;
                 }
                 else{
