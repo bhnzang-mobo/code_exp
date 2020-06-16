@@ -96,10 +96,9 @@ btNode* BSTdelete(btNode** bst, bstdata data){
             }
         }
         
-        return delnode;
     }
-    Rebalancing(bst);
-    
+    Rebalancing(&delpnode);
+    return delnode;
 }
 
 
