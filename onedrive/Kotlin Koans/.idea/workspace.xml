@@ -1,0 +1,764 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fde6abaf-0747-4d7a-9374-1e1c852d85eb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_annotations_13_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_3_21.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_common_1_3_21.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_3_21.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk8_1_3_21.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Builders/Builders how it works/Builders-Builders_how_it_works.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Builders/Builders implementation/Builders-Builders_implementation.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Builders/Function literals with receiver/Builders-Function_literals_with_receiver.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Builders/Html builders/Builders-Html_builders.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Builders/String and map builders/Builders-String_and_map_builders.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Builders/The function apply/Builders-The_function_apply.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Classes/Data classes/Classes-Data_classes.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Classes/Extension functions/Classes-Extension_functions.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Classes/Rename on import/Classes-Rename_on_import.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Classes/Sealed classes/Classes-Sealed_classes.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Classes/Smart casts/Classes-Smart_casts.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Collections/All Any and other predicates/Collections-All_Any_and_other_predicates.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Collections/Associate/Collections-Associate.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Collections/Compound tasks/Collections-Compound_tasks.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Collections/Filter map/Collections-Filter_map.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Collections/FlatMap/Collections-FlatMap.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Collections/Fold/Collections-Fold.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Collections/Getting used to new style/Collections-Getting_used_to_new_style.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Collections/GroupBy/Collections-GroupBy.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Collections/Introduction/Collections-Introduction.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Collections/Max min/Collections-Max_min.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Collections/Partition/Collections-Partition.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Collections/Sequences/Collections-Sequences.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Collections/Sort/Collections-Sort.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Collections/Sum/Collections-Sum.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Conventions/Comparison/Conventions-Comparison.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Conventions/For loop/Conventions-For_loop.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Conventions/Invoke/Conventions-Invoke.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Conventions/Operators overloading/Conventions-Operators_overloading.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Conventions/Ranges/Conventions-Ranges.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Generics/Generic functions/Generics-Generic_functions.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Introduction/Default arguments/Introduction-Default_arguments.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Introduction/Hello, world!/Introduction-Hello,_world!.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Introduction/Lambdas/Introduction-Lambdas.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Introduction/Named arguments/Introduction-Named_arguments.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Introduction/Nothing type/Introduction-Nothing_type.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Introduction/Nullable types/Introduction-Nullable_types.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Introduction/String templates/Introduction-String_templates.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Introduction/Triple-quoted strings/Introduction-Triple-quoted_strings.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Kotlin_Koans.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Properties/Delegates examples/Properties-Delegates_examples.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Properties/Delegates how it works/Properties-Delegates_how_it_works.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Properties/Lazy property/Properties-Lazy_property.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Properties/Properties/Properties-Properties.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/util/util.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Builders/Builders how it works/src/Task.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Builders/Builders how it works/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Builders/Builders how it works/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Builders/Builders how it works/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Builders/Builders how it works/test/tests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Builders/Builders implementation/src/Task.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Builders/Builders implementation/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Builders/Builders implementation/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Builders/Builders implementation/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Builders/Builders implementation/test/Tests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Builders/Function literals with receiver/src/Task.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Builders/Function literals with receiver/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Builders/Function literals with receiver/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Builders/Function literals with receiver/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Builders/Function literals with receiver/test/tests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Builders/Html builders/src/Task.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Builders/Html builders/src/data.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Builders/Html builders/src/demo.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Builders/Html builders/src/demo.kt.wb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Builders/Html builders/src/html.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Builders/Html builders/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Builders/Html builders/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Builders/Html builders/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Builders/Html builders/task.md.wb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Builders/Html builders/test/tests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Builders/String and map builders/src/Task.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Builders/String and map builders/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Builders/String and map builders/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Builders/String and map builders/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Builders/String and map builders/test/tests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Builders/The function apply/src/Task.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Builders/The function apply/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Builders/The function apply/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Builders/The function apply/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Builders/The function apply/test/tests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Builders/lesson-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Builders/lesson-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Classes/Data classes/src/Task.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Classes/Data classes/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Classes/Data classes/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Classes/Data classes/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Classes/Data classes/test/tests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Classes/Extension functions/src/Task.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Classes/Extension functions/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Classes/Extension functions/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Classes/Extension functions/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Classes/Extension functions/test/tests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Classes/Rename on import/src/Task.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Classes/Rename on import/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Classes/Rename on import/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Classes/Rename on import/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Classes/Rename on import/test/Tests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Classes/Sealed classes/src/Task.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Classes/Sealed classes/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Classes/Sealed classes/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Classes/Sealed classes/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Classes/Sealed classes/test/Tests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Classes/Smart casts/src/Task.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Classes/Smart casts/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Classes/Smart casts/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Classes/Smart casts/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Classes/Smart casts/test/tests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Classes/lesson-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Classes/lesson-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/All Any and other predicates/src/Shop.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/All Any and other predicates/src/Task.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/All Any and other predicates/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/All Any and other predicates/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/All Any and other predicates/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/All Any and other predicates/test/TestShop.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/All Any and other predicates/test/tests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Associate/src/Shop.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Associate/src/Task.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Associate/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Associate/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Associate/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Associate/test/TestShop.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Associate/test/Tests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Compound tasks/src/Shop.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Compound tasks/src/Task.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Compound tasks/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Compound tasks/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Compound tasks/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Compound tasks/test/TestShop.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Compound tasks/test/tests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Filter map/src/Shop.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Filter map/src/Task.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Filter map/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Filter map/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Filter map/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Filter map/test/TestShop.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Filter map/test/tests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/FlatMap/src/Shop.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/FlatMap/src/Task.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/FlatMap/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/FlatMap/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/FlatMap/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/FlatMap/test/TestShop.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/FlatMap/test/tests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Fold/src/Shop.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Fold/src/Task.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Fold/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Fold/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Fold/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Fold/test/TestShop.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Fold/test/tests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Getting used to new style/src/Task.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Getting used to new style/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Getting used to new style/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Getting used to new style/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Getting used to new style/test/tests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/GroupBy/src/Shop.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/GroupBy/src/Task.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/GroupBy/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/GroupBy/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/GroupBy/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/GroupBy/test/TestShop.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/GroupBy/test/tests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Introduction/src/Shop.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Introduction/src/Task.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Introduction/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Introduction/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Introduction/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Introduction/test/TestShop.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Introduction/test/tests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Max min/src/Shop.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Max min/src/Task.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Max min/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Max min/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Max min/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Max min/test/TestShop.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Max min/test/tests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Partition/src/Shop.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Partition/src/Task.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Partition/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Partition/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Partition/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Partition/test/TestShop.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Partition/test/tests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Sequences/src/Shop.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Sequences/src/Task.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Sequences/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Sequences/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Sequences/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Sequences/test/TestShop.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Sequences/test/Tests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Sort/src/Shop.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Sort/src/Task.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Sort/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Sort/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Sort/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Sort/test/TestShop.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Sort/test/tests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Sum/src/Shop.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Sum/src/Task.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Sum/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Sum/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Sum/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Sum/test/TestShop.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Sum/test/tests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/lesson-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/lesson-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Conventions/Comparison/src/Task.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Conventions/Comparison/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Conventions/Comparison/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Conventions/Comparison/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Conventions/Comparison/test/tests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Conventions/For loop/src/DateUtil.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Conventions/For loop/src/MyDate.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Conventions/For loop/src/Task.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Conventions/For loop/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Conventions/For loop/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Conventions/For loop/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Conventions/For loop/test/tests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Conventions/Invoke/src/Task.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Conventions/Invoke/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Conventions/Invoke/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Conventions/Invoke/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Conventions/Invoke/test/tests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Conventions/Operators overloading/src/DateUtil.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Conventions/Operators overloading/src/Task.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Conventions/Operators overloading/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Conventions/Operators overloading/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Conventions/Operators overloading/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Conventions/Operators overloading/test/tests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Conventions/Ranges/src/MyDate.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Conventions/Ranges/src/Task.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Conventions/Ranges/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Conventions/Ranges/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Conventions/Ranges/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Conventions/Ranges/test/tests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Conventions/lesson-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Conventions/lesson-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Generics/Generic functions/src/Task.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Generics/Generic functions/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Generics/Generic functions/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Generics/Generic functions/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Generics/Generic functions/test/tests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Generics/lesson-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Generics/lesson-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Introduction/Default arguments/src/Task.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Introduction/Default arguments/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Introduction/Default arguments/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Introduction/Default arguments/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Introduction/Default arguments/test/tests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Introduction/Hello, world!/src/Task.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Introduction/Hello, world!/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Introduction/Hello, world!/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Introduction/Hello, world!/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Introduction/Hello, world!/test/tests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Introduction/Lambdas/src/Task.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Introduction/Lambdas/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Introduction/Lambdas/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Introduction/Lambdas/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Introduction/Lambdas/test/tests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Introduction/Named arguments/src/Task.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Introduction/Named arguments/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Introduction/Named arguments/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Introduction/Named arguments/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Introduction/Named arguments/test/tests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Introduction/Nothing type/src/Task.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Introduction/Nothing type/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Introduction/Nothing type/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Introduction/Nothing type/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Introduction/Nothing type/test/Tests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Introduction/Nullable types/src/Task.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Introduction/Nullable types/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Introduction/Nullable types/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Introduction/Nullable types/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Introduction/Nullable types/test/tests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Introduction/String templates/src/Task.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Introduction/String templates/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Introduction/String templates/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Introduction/String templates/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Introduction/String templates/test/tests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Introduction/Triple-quoted strings/src/Task.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Introduction/Triple-quoted strings/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Introduction/Triple-quoted strings/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Introduction/Triple-quoted strings/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Introduction/Triple-quoted strings/test/Tests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Introduction/lesson-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Introduction/lesson-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Properties/Delegates examples/src/Task.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Properties/Delegates examples/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Properties/Delegates examples/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Properties/Delegates examples/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Properties/Delegates examples/test/tests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Properties/Delegates how it works/src/MyDate.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Properties/Delegates how it works/src/Task.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Properties/Delegates how it works/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Properties/Delegates how it works/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Properties/Delegates how it works/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Properties/Delegates how it works/test/tests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Properties/Lazy property/src/Task.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Properties/Lazy property/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Properties/Lazy property/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Properties/Lazy property/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Properties/Lazy property/test/tests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Properties/Properties/src/Task.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Properties/Properties/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Properties/Properties/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Properties/Properties/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Properties/Properties/test/tests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Properties/lesson-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Properties/lesson-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/src/koansTestUtil.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BJ_mobo" beforeDir="false" afterPath="$PROJECT_DIR$/../../BJ_mobo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datastructure/D_LinkedList/DLlist.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datastructure/D_LinkedList/DLlist.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datastructure/eg/Graph/ALEdge/graphKruskal.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datastructure/eg/Graph/ALEdge/graphKruskal.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datastructure/eg/Graph/ALEdge/heap.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datastructure/eg/Graph/ALEdge/heap.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datastructure/eg/Graph/ALEdge/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datastructure/eg/Graph/ALEdge/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datastructure/eg/Graph/graph.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datastructure/eg/Graph/graph.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datastructure/eg/Graph/heap.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datastructure/eg/Graph/heap.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datastructure/eg/Graph/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datastructure/eg/Graph/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datastructure/eg/Heap/heap.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datastructure/eg/Heap/heap.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datastructure/eg/Sorting/heap.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datastructure/eg/Sorting/heap.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datastructure/eg/Stack/calculator/.vscode/tasks.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datastructure/eg/Stack/calculator/.vscode/tasks.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datastructure/eg/Stack/calculator/test.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datastructure/eg/Stack/calculator/test.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datastructure/eg/Tree/AVL/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datastructure/eg/Tree/AVL/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datastructure/eg/Tree/AVL/test.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datastructure/eg/Tree/AVL/test.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datastructure/eg/queue/pqueue/test.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datastructure/eg/queue/pqueue/test.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JsonCreator.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../JsonCreator.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../jsonCreator/.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../jsonCreator/.vscode/launch.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../jsonCreator/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../jsonCreator/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../jsonCreator/main.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspaceiniit/JsonCreator.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../workspaceiniit/JsonCreator.exe" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.gradle/" />
+    <ignored path="$PROJECT_DIR$/build/" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/Builders/Builders how it works/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Builders/Builders how it works/build/" />
+    <ignored path="$PROJECT_DIR$/Builders/Builders how it works/out/" />
+    <ignored path="$PROJECT_DIR$/Builders/Builders implementation/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Builders/Builders implementation/build/" />
+    <ignored path="$PROJECT_DIR$/Builders/Builders implementation/out/" />
+    <ignored path="$PROJECT_DIR$/Builders/Function literals with receiver/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Builders/Function literals with receiver/build/" />
+    <ignored path="$PROJECT_DIR$/Builders/Function literals with receiver/out/" />
+    <ignored path="$PROJECT_DIR$/Builders/Html builders/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Builders/Html builders/build/" />
+    <ignored path="$PROJECT_DIR$/Builders/Html builders/out/" />
+    <ignored path="$PROJECT_DIR$/Builders/String and map builders/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Builders/String and map builders/build/" />
+    <ignored path="$PROJECT_DIR$/Builders/String and map builders/out/" />
+    <ignored path="$PROJECT_DIR$/Builders/The function apply/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Builders/The function apply/build/" />
+    <ignored path="$PROJECT_DIR$/Builders/The function apply/out/" />
+    <ignored path="$PROJECT_DIR$/Classes/Data classes/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Classes/Data classes/build/" />
+    <ignored path="$PROJECT_DIR$/Classes/Data classes/out/" />
+    <ignored path="$PROJECT_DIR$/Classes/Extension functions/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Classes/Extension functions/build/" />
+    <ignored path="$PROJECT_DIR$/Classes/Extension functions/out/" />
+    <ignored path="$PROJECT_DIR$/Classes/Rename on import/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Classes/Rename on import/build/" />
+    <ignored path="$PROJECT_DIR$/Classes/Rename on import/out/" />
+    <ignored path="$PROJECT_DIR$/Classes/Sealed classes/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Classes/Sealed classes/build/" />
+    <ignored path="$PROJECT_DIR$/Classes/Sealed classes/out/" />
+    <ignored path="$PROJECT_DIR$/Classes/Smart casts/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Classes/Smart casts/build/" />
+    <ignored path="$PROJECT_DIR$/Classes/Smart casts/out/" />
+    <ignored path="$PROJECT_DIR$/Collections/All Any and other predicates/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Collections/All Any and other predicates/build/" />
+    <ignored path="$PROJECT_DIR$/Collections/All Any and other predicates/out/" />
+    <ignored path="$PROJECT_DIR$/Collections/Associate/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Collections/Associate/build/" />
+    <ignored path="$PROJECT_DIR$/Collections/Associate/out/" />
+    <ignored path="$PROJECT_DIR$/Collections/Compound tasks/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Collections/Compound tasks/build/" />
+    <ignored path="$PROJECT_DIR$/Collections/Compound tasks/out/" />
+    <ignored path="$PROJECT_DIR$/Collections/Filter map/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Collections/Filter map/build/" />
+    <ignored path="$PROJECT_DIR$/Collections/Filter map/out/" />
+    <ignored path="$PROJECT_DIR$/Collections/FlatMap/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Collections/FlatMap/build/" />
+    <ignored path="$PROJECT_DIR$/Collections/FlatMap/out/" />
+    <ignored path="$PROJECT_DIR$/Collections/Fold/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Collections/Fold/build/" />
+    <ignored path="$PROJECT_DIR$/Collections/Fold/out/" />
+    <ignored path="$PROJECT_DIR$/Collections/Getting used to new style/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Collections/Getting used to new style/build/" />
+    <ignored path="$PROJECT_DIR$/Collections/Getting used to new style/out/" />
+    <ignored path="$PROJECT_DIR$/Collections/GroupBy/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Collections/GroupBy/build/" />
+    <ignored path="$PROJECT_DIR$/Collections/GroupBy/out/" />
+    <ignored path="$PROJECT_DIR$/Collections/Introduction/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Collections/Introduction/build/" />
+    <ignored path="$PROJECT_DIR$/Collections/Introduction/out/" />
+    <ignored path="$PROJECT_DIR$/Collections/Max min/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Collections/Max min/build/" />
+    <ignored path="$PROJECT_DIR$/Collections/Max min/out/" />
+    <ignored path="$PROJECT_DIR$/Collections/Partition/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Collections/Partition/build/" />
+    <ignored path="$PROJECT_DIR$/Collections/Partition/out/" />
+    <ignored path="$PROJECT_DIR$/Collections/Sequences/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Collections/Sequences/build/" />
+    <ignored path="$PROJECT_DIR$/Collections/Sequences/out/" />
+    <ignored path="$PROJECT_DIR$/Collections/Sort/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Collections/Sort/build/" />
+    <ignored path="$PROJECT_DIR$/Collections/Sort/out/" />
+    <ignored path="$PROJECT_DIR$/Collections/Sum/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Collections/Sum/build/" />
+    <ignored path="$PROJECT_DIR$/Collections/Sum/out/" />
+    <ignored path="$PROJECT_DIR$/Conventions/Comparison/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Conventions/Comparison/build/" />
+    <ignored path="$PROJECT_DIR$/Conventions/Comparison/out/" />
+    <ignored path="$PROJECT_DIR$/Conventions/For loop/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Conventions/For loop/build/" />
+    <ignored path="$PROJECT_DIR$/Conventions/For loop/out/" />
+    <ignored path="$PROJECT_DIR$/Conventions/Invoke/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Conventions/Invoke/build/" />
+    <ignored path="$PROJECT_DIR$/Conventions/Invoke/out/" />
+    <ignored path="$PROJECT_DIR$/Conventions/Operators overloading/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Conventions/Operators overloading/build/" />
+    <ignored path="$PROJECT_DIR$/Conventions/Operators overloading/out/" />
+    <ignored path="$PROJECT_DIR$/Conventions/Ranges/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Conventions/Ranges/build/" />
+    <ignored path="$PROJECT_DIR$/Conventions/Ranges/out/" />
+    <ignored path="$PROJECT_DIR$/Generics/Generic functions/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Generics/Generic functions/build/" />
+    <ignored path="$PROJECT_DIR$/Generics/Generic functions/out/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Default arguments/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Default arguments/build/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Default arguments/out/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Hello, world!/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Hello, world!/build/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Hello, world!/out/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Lambdas/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Lambdas/build/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Lambdas/out/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Named arguments/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Named arguments/build/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Named arguments/out/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Nothing type/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Nothing type/build/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Nothing type/out/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Nullable types/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Nullable types/build/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Nullable types/out/" />
+    <ignored path="$PROJECT_DIR$/Introduction/String templates/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Introduction/String templates/build/" />
+    <ignored path="$PROJECT_DIR$/Introduction/String templates/out/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Triple-quoted strings/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Triple-quoted strings/build/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Triple-quoted strings/out/" />
+    <ignored path="$PROJECT_DIR$/Properties/Delegates examples/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Properties/Delegates examples/build/" />
+    <ignored path="$PROJECT_DIR$/Properties/Delegates examples/out/" />
+    <ignored path="$PROJECT_DIR$/Properties/Delegates how it works/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Properties/Delegates how it works/build/" />
+    <ignored path="$PROJECT_DIR$/Properties/Delegates how it works/out/" />
+    <ignored path="$PROJECT_DIR$/Properties/Lazy property/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Properties/Lazy property/build/" />
+    <ignored path="$PROJECT_DIR$/Properties/Lazy property/out/" />
+    <ignored path="$PROJECT_DIR$/Properties/Properties/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Properties/Properties/build/" />
+    <ignored path="$PROJECT_DIR$/Properties/Properties/out/" />
+    <ignored path="$PROJECT_DIR$/util/.gradle/" />
+    <ignored path="$PROJECT_DIR$/util/build/" />
+    <ignored path="$PROJECT_DIR$/util/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Introduction/Nullable types/src/Task.kt">
+          <provider selected="true" editor-type-id="StudyEditor">
+            <state>
+              <EduEditorState>
+                <MainEditorState relative-caret-position="243">
+                  <caret line="9" column="51" lean-forward="true" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+                </MainEditorState>
+              </EduEditorState>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <dirStrings>
+      <dir>C:\Users\bhnza\Desktop\code_exp\onedrive\Kotlin Koans</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Introduction/Hello, world!/src/Task.kt" />
+        <option value="$PROJECT_DIR$/Introduction/Named arguments/src/Task.kt" />
+        <option value="$PROJECT_DIR$/Introduction/Default arguments/src/Task.kt" />
+        <option value="$PROJECT_DIR$/Introduction/Triple-quoted strings/src/Task.kt" />
+        <option value="$PROJECT_DIR$/Introduction/String templates/src/Task.kt" />
+        <option value="$PROJECT_DIR$/Introduction/Nullable types/src/Task.kt" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="54" />
+    <option name="y" value="-8" />
+    <option name="width" value="945" />
+    <option name="height" value="1096" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="Course" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Course" />
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="not.eligible.for.single.variant.sync" value="true" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="show.inlinked.gradle.project.popup" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fde6abaf-0747-4d7a-9374-1e1c852d85eb" name="Default Changelist" comment="" />
+      <created>1592805333799</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592805333799</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="All_in_Introduction-Hello,_world! - 2020.06.22 at 15h 22m 05s.xml">
+      <configuration name="All in Introduction-Hello,_world!" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="All_in_Introduction-Named_arguments - 2020.06.22 at 16h 37m 53s.xml">
+      <configuration name="All in Introduction-Named_arguments" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="All_in_Introduction-Named_arguments - 2020.06.22 at 16h 38m 54s.xml">
+      <configuration name="All in Introduction-Named_arguments" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="All_in_Introduction-Default_arguments - 2020.06.22 at 16h 45m 03s.xml">
+      <configuration name="All in Introduction-Default_arguments" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="All_in_Introduction-Default_arguments - 2020.06.22 at 16h 45m 44s.xml">
+      <configuration name="All in Introduction-Default_arguments" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="All_in_Introduction-Default_arguments - 2020.06.22 at 16h 47m 05s.xml">
+      <configuration name="All in Introduction-Default_arguments" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="All_in_Introduction-Default_arguments - 2020.06.22 at 16h 47m 36s.xml">
+      <configuration name="All in Introduction-Default_arguments" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="All_in_Introduction-Triple-quoted_strings - 2020.06.22 at 16h 53m 07s.xml">
+      <configuration name="All in Introduction-Triple-quoted_strings" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="All_in_Introduction-String_templates - 2020.06.22 at 22h 57m 30s.xml">
+      <configuration name="All in Introduction-String_templates" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="All_in_Introduction-String_templates - 2020.06.22 at 22h 58m 12s.xml">
+      <configuration name="All in Introduction-String_templates" configurationId="AndroidJUnit" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
+    <layout>
+      <window_info id="Captures" order="0" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="1" weight="0.22259887" />
+      <window_info id="Structure" order="2" side_tool="true" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Resources Explorer" order="6" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="0" />
+      <window_info anchor="bottom" id="Run" order="1" />
+      <window_info anchor="bottom" id="TODO" order="2" />
+      <window_info anchor="bottom" id="Find" order="3" />
+      <window_info anchor="bottom" id="Educational.CheckDetails" order="4" visible="true" weight="0.32985386" />
+      <window_info anchor="bottom" id="Terminal" order="5" />
+      <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Build" order="8" weight="0.3308977" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.32985386" />
+      <window_info anchor="right" id="Task" order="0" visible="true" weight="0.40628445" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Gradle" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Introduction/Named arguments/test/tests.kt">
+      <provider selected="true" editor-type-id="StudyEditor">
+        <state>
+          <EduEditorState>
+            <MainEditorState relative-caret-position="270">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <element signature="e#0#76#0" expanded="true" />
+              </folding>
+            </MainEditorState>
+          </EduEditorState>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Introduction/Named arguments/src/Task.kt">
+      <provider selected="true" editor-type-id="StudyEditor">
+        <state>
+          <EduEditorState>
+            <MainEditorState relative-caret-position="27">
+              <caret line="1" column="53" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="53" />
+            </MainEditorState>
+          </EduEditorState>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Introduction/Hello, world!/src/Task.kt">
+      <provider selected="true" editor-type-id="StudyEditor">
+        <state>
+          <EduEditorState>
+            <MainEditorState relative-caret-position="27">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </MainEditorState>
+          </EduEditorState>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Introduction/Default arguments/src/Task.kt">
+      <provider selected="true" editor-type-id="StudyEditor">
+        <state>
+          <EduEditorState>
+            <MainEditorState relative-caret-position="162">
+              <caret line="6" column="37" lean-forward="true" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+            </MainEditorState>
+          </EduEditorState>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Introduction/Triple-quoted strings/src/Task.kt">
+      <provider selected="true" editor-type-id="StudyEditor">
+        <state>
+          <EduEditorState>
+            <MainEditorState relative-caret-position="135">
+              <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="40" />
+            </MainEditorState>
+          </EduEditorState>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Introduction/String templates/src/Task.kt">
+      <provider selected="true" editor-type-id="StudyEditor">
+        <state>
+          <EduEditorState>
+            <MainEditorState relative-caret-position="54">
+              <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+            </MainEditorState>
+          </EduEditorState>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Introduction/Nullable types/src/Task.kt">
+      <provider selected="true" editor-type-id="StudyEditor">
+        <state>
+          <EduEditorState>
+            <MainEditorState relative-caret-position="243">
+              <caret line="9" column="51" lean-forward="true" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+            </MainEditorState>
+          </EduEditorState>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
