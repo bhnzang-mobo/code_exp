@@ -90,7 +90,7 @@ void radix_sort(data arr[],int num,int maxlen,Bucket buck){
     }    //arr, num of data,max len of data
     
 
-    while(++i <= maxlen){
+    for(i ; i < maxlen ; i ++){
         for(int j = 0 ; j < num ; j ++){
             int idx = arr[j]/oper%10;
             enqueue(&buck.bucket[idx],arr[j]);
