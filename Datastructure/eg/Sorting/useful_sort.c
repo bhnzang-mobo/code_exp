@@ -24,7 +24,7 @@ void merge_sort(data arr[],int left,int right,Comparitor comp){
         int lhand = left;
         int rhand = mid+1;
         data *tmparr=(data*)malloc(sizeof(data)*(right-left+1));
-        int i = 0 ;
+        int i = 0;
 
 
         while(lhand<=mid && rhand<=right){
@@ -80,17 +80,15 @@ void quick_sort(data arr[],int left,int right,Comparitor comp){
 }
 
 void radix_sort(data arr[],int num,int maxlen,Bucket buck){
-    int i = 0;
-    int oper=1;
+    
     buck.bucket=(queue*)malloc(sizeof(queue)*buck.numofradix);
     
-    //be careful on iteration : ..;j < num;.. (X) 
-    for(int j = 0 ; j < buck.numofradix ; j ++){
+    for(int j = 0 ; j < buck.numofradix ; j ++){ //be careful on iteration : ..;j < num;.. (X) 
         queueinit(&buck.bucket[j]);
     }    //arr, num of data,max len of data
     
-
-    for(i ; i < maxlen ; i ++){
+    int oper=1;
+    for(int i = 0 ; i < maxlen ; i ++,oper*=10){
         for(int j = 0 ; j < num ; j ++){
             int idx = arr[j]/oper%10;
             enqueue(&buck.bucket[idx],arr[j]);
@@ -102,6 +100,5 @@ void radix_sort(data arr[],int num,int maxlen,Bucket buck){
                 arr[tmp++] = dequeue(&buck.bucket[j]);
             }
         }
-        oper*=10;
     }
 }
