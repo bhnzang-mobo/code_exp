@@ -2,7 +2,7 @@
 #include "graph.h"
 int main(){
     ALGraph al;
-    GraphInit(&al,G);
+    GraphInit(&al,G+1);
 
     AddEdge(&al,A,B);
     AddEdge(&al,A,D);

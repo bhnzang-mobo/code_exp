@@ -2,7 +2,7 @@
 #include "graphKruskal.h"
 int main(){
     ALGraph al;
-    GraphInit(&al,F);
+    GraphInit(&al,F+1);
 
     AddEdge(&al,A,B,9);
     AddEdge(&al,B,C,2);
@@ -14,10 +14,10 @@ int main(){
     AddEdge(&al,D,E,3);
     AddEdge(&al,E,C,7);
     AddEdge(&al,F,E,13);
-    
-    printf("Depth First Search\n");
-    DFS(&al,A);
     ShowGraphInfo(&al);
+
+    printf("Depth First Search\n");
+    BFS(&al,C);
     printf("\nConstitue Kruskal\n");
     ConKruskal(&al);
     ShowGraphInfo(&al);

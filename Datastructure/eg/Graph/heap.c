@@ -30,7 +30,7 @@ Hdata heapDelete(heap* hp){
     int idx = 1;
     Hdata deldata = hp->heaparr[1];
     int mv;
-    while(2*idx<hp->numOfData){
+    while(2*idx<=hp->numOfData){
         if(2*idx==hp->numOfData) mv= 2*idx;//if the is a one child (left one)
         else mv = hp->comp(hp->heaparr[2*idx],hp->heaparr[2*idx+1]) ? 2*idx+1 : 2*idx; //if there is two children
         

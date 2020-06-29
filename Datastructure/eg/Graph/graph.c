@@ -2,15 +2,15 @@
 #include <malloc.h>
 #include "graph.h"
 //enum value starts with 0. E = 4
-void GraphInit(ALGraph* al,int nv){//nv is index number.
-    al->num_vert=nv+1;
+void GraphInit(ALGraph* al,int nv){//nv is Quantity number.
+    al->num_vert=nv;
     al->num_edge=0;
     //Cause of Crash.
     //Not enough allocation. it was...
     //sizeof(DLlist)*nv, which is nv+1 = al->num_vert.
     al->list=(DList*)malloc(sizeof(DList)*(al->num_vert));
     al->visitinfo=(int*)malloc(sizeof(int)*(al->num_vert));
-    for(int i = 0 ; i < nv+1 ; i ++){//error : i < nv
+    for(int i = 0 ; i < al->num_vert ; i ++){//error : i < nv
         Dinit(&(al->list[i]));
     }
 
