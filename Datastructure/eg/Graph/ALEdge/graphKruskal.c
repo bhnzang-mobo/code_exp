@@ -95,12 +95,13 @@ void DFS(ALGraph* al,int start){
     int next,origin;
     Stackinit(&stack);
 
-    Push(&stack,start);
-    VisitVert(al,start);
-    obj=&(al->list[start]);
+    origin=start;
     next=start;
     
-    
+    Push(&stack,origin);
+    VisitVert(al,next);
+    obj=&(al->list[next]);
+
         
     origin=Peek(&stack);
 
@@ -144,10 +145,11 @@ void DFS(ALGraph* al,int start){
     int next;
     Stackinit(&stack);
 
-    Push(&stack,start);
-    VisitVert(al,start);
-    obj=&(al->list[start]);
-    next=start;
+    next = start;
+
+    Push(&stack,next);
+    VisitVert(al,next);
+    obj=&(al->list[next]);
         
 
     while(!isEmpty(&stack)){
