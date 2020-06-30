@@ -77,7 +77,7 @@ void VisitVert(ALGraph* al, int visit){
 
 void DFS(ALGraph* al,int start){
     DData data;
-    DList * obj,*start_obj;
+    DList * obj;
     Stack stack;
     
     int i = 0;
