@@ -22,7 +22,7 @@ void heapinsert(heap* hp, Hdata data){
         else{
             break;
         }
-        idx/=2;
+        idx=rt;
     }
     hp->heaparr[idx]=data;
     hp->numOfData++;
