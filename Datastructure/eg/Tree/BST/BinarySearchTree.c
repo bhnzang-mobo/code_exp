@@ -12,20 +12,16 @@ void BSTinsert(btNode** bstroot,bstdata data){
         *bstroot = nnode;
     }
     else{
-        btNode * next= cnode;
-        while(next!=NULL){
+        btNode ** next;
+        next = &cnode;
+        while(*next!=NULL){
             if(cnode->data == data){//Primary Key
                 return;
             }
-            cnode = next;
-            next= cnode->data>data?GetLeftSubTree(cnode):GetRightSubTree(cnode);
+            cnode = *next;
+            next= cnode->data>data?&(cnode->left):&(cnode->right);
         }
-        if(data<cnode->data){
-            MakeLeftSubTree(cnode,nnode);
-        }
-        else{
-            MakeRightSubTree(cnode,nnode);
-        }
+        *next=nnode;//if-then statement removed.
     }
 }
 bstdata BSTGetNodeData(btNode* bstroot){
