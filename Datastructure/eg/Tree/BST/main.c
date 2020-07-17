@@ -15,7 +15,6 @@ int main(){
     BSTinsert(&bstroot,7);
     BSTinsert(&bstroot,13);
     
-    BSTdelete(&bstroot,12);
     sNode=BSTsearch(bstroot,12);
     if(sNode==NULL){
         printf("Fail\n");

@@ -4,8 +4,8 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 87
-    length: 80
+  - offset: 220
+    length: 0
     placeholder_text: TODO()
     initial_state:
       length: 6
@@ -17,7 +17,7 @@ files:
               mailer.sendMessage(email, message)
           }
     selected: true
-    status: Failed
+    status: Solved
   text: |
     fun sendMessageToClient(
             client: Client?, message: String?, mailer: Mailer
@@ -88,5 +88,5 @@ files:
         }
     }
   learner_created: false
-status: Failed
+status: Solved
 record: -1

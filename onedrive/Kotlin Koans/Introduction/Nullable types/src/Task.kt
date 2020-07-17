@@ -1,7 +1,10 @@
 fun sendMessageToClient(
         client: Client?, message: String?, mailer: Mailer
 ) {
-    mailer.sendMessage(client?.personalInfo.email.toString(),message.toString())
+    if(client?.personalInfo?.email!=null && message != null) {
+        mailer.sendMessage(client?.personalInfo?.email,message)
+    }
+
 }
 
 class Client(val personalInfo: PersonalInfo?)
