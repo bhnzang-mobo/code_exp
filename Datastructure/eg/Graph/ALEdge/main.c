@@ -17,7 +17,7 @@ int main(){
     ShowGraphInfo(&al);
 
     printf("Depth First Search\n");
-    BFS(&al,C);
+    DFS(&al,C);
     printf("\nConstitue Kruskal\n");
     ConKruskal(&al);
     ShowGraphInfo(&al);

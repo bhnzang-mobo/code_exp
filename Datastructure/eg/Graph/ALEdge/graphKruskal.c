@@ -26,8 +26,10 @@ void GraphInit(ALGraph* al,int nv){//nv is Quantity number.
 void AddEdge(ALGraph* al,int from ,int to, int weight){
     DList* obj = &(al->list[from]);
     Dinsert(obj,to);
+
     obj = &(al->list[to]);
     Dinsert(obj,from);
+
     al->num_edge++;
     PQueue *pq = &(al->pque);
     Edge data = {from,to,weight};
@@ -41,8 +43,10 @@ void ShowGraphInfo(ALGraph* al){
     while(i<=al->num_vert-1){
         printf("%c to ",'A'+i);
         DList* obj = &(al->list[i++]);
+
         if(DFirst(obj,&data)){
             printf("%c ",'A'+data);
+
             while(DNext(obj,&data)){
                 printf("%c ",'A'+data);
             }
@@ -80,11 +84,11 @@ void DFS(ALGraph* al,int start){
     DList * obj;
     Stack stack;
     
-    int i = 0;
-    while(i < al->num_vert){
+    
+    for(int i = 0 ; i < al->num_vert; i++){
         DFirst(&(al->list[i]),&data);
-        i++;
     }
+    
     for(int i = 0 ; i < al->num_vert ; i ++){
         al->visitinfo[i]=0;
     }
@@ -110,6 +114,7 @@ void DFS(ALGraph* al,int start){
     }
     obj=&(al->list[next]);
     printf("%c Refered.\n",'A'+next);
+
     */
    //원래 구성하던 방식은 현재노드 push, 과거 노드 pop, 과거노드 peek(열람,쓸일 없음)
    //따라서 과거 node pop을 할 경우가 되는경우는 현재 노드에 갈 곳이 없는경우.
@@ -118,25 +123,31 @@ void DFS(ALGraph* al,int start){
    //현재 노드에 갈 곳이 없는 경우, 과거로 되돌아가려면 start에서 갈곳을 만들어야함
    //따라서 가상의 시작노드를 만들어 가상 노드가 시작 노드를 가리키고 있도록함.
    /*아래 방식이 위에서 기술한 논리
+    big:
     while(!isEmpty(&stack)){
         origin=next;
+        
         DFirst(obj,&next);
-        while(haveVisited(al->visitinfo,next)){//What's next?
-            if(!DNext(obj,&next)) break;
-        }
         if(!haveVisited(al->visitinfo,next)){ //Yes Next
             Push(&stack,origin);
             VisitVert(al,next);
             obj=&(al->list[next]);
             continue;
         }
-        else{ //No next
-            if(!isEmpty(&stack)){
-                next=Pop(&stack);
+
+        while(haveVisited(al->visitinfo,next)){//What's next?
+            if(!haveVisited(al->visitinfo,next)){ //Yes Next
+                Push(&stack,origin);
+                VisitVert(al,next);
                 obj=&(al->list[next]);
+                goto big;
             }
         }
-    }*/
+        //No next
+        next=Pop(&stack);
+        obj=&(al->list[next]);
+        }
+    */
     //아래 방식은 다음노드 push, 다음노드 visit, 과거노드 회수를 pop & peek로 설정해 구성한경우
     //peek는 현재 노드를 의미하며 pop&peek할 경우 과거노드를 회수할 수 있음
     //따라서 isempty의 의미는 마지막 노드(시작노드)가 더이상 갈 곳이 없어 pop하여 탐색이 종료된 경우를 의미함
@@ -150,26 +161,33 @@ void DFS(ALGraph* al,int start){
     Push(&stack,next);
     VisitVert(al,next);
     obj=&(al->list[next]);
-        
-
+    
+    big:
     while(!isEmpty(&stack)){
         DFirst(obj,&next);
-        while(haveVisited(al->visitinfo,next)){//What's next?
-            if(!DNext(obj,&next)) break;
-        }
         if(!haveVisited(al->visitinfo,next)){ //Yes Next
             Push(&stack,next);
             VisitVert(al,next);
             obj=&(al->list[next]);
             continue;
         }
-        else{ //No next
-            if(!isEmpty(&stack)){
-                Pop(&stack);
-                if(!isEmpty(&stack)) next=Peek(&stack);
-                obj=&(al->list[next]);
+
+        while(DNext(obj,&next)){//What's next?
+            if(!haveVisited(al->visitinfo,next)){ //Yes Next
+            Push(&stack,next);
+            VisitVert(al,next);
+            obj=&(al->list[next]);
+            goto big; //which means continute big loop
             }
         }
+
+        //if program reaches here, it means that there is No next to go.
+        Pop(&stack);
+        if(!isEmpty(&stack)){
+            next=Peek(&stack);
+            obj=&(al->list[next]);    
+        }
+        
     }
 }
 
@@ -178,8 +196,8 @@ void BFS(ALGraph* al, int start){
     int nextV;
     DList* obj;
     queue alque;
-    queueinit(&alque);
 
+    queueinit(&alque);
     for(int i = 0 ; i < al->num_vert ; i ++){
         al->visitinfo[i]=0;
     }
@@ -210,7 +228,7 @@ void BFS(ALGraph* al, int start){
 }
 
 int isConnect(ALGraph* al){
-    BFS(al,A);
+    DFS(al,A);
     for(int i = 0 ; i < al->num_vert ; i ++){
         if(al->visitinfo[i]==0){
             return 0;
@@ -224,13 +242,17 @@ void ConKruskal(ALGraph * al){
         return;
     }
     PQueue pq = al->pque;
-    
+    PQueue pq_save;
+    PQueueInit(&pq_save,al->pque.comp);
+
     while(al->num_vert<al->num_edge+1){
         //1.delete
         PQData data = PDequeue(&pq);
         int from = data.v1;
         int to = data.v2;
         int comp;
+
+        //find to
         DFirst(&(al->list[from]),&comp);
         if(to==comp){
             DRemove(&(al->list[from]));
@@ -243,6 +265,8 @@ void ConKruskal(ALGraph * al){
                 }
             }  
         }
+
+        //find from
         DFirst(&(al->list[to]),&comp);
         if(from==comp){
             DRemove(&(al->list[to]));
@@ -256,18 +280,26 @@ void ConKruskal(ALGraph * al){
             }  
         }
         al->num_edge--;
+        //deletion finish
+
         //2.connection test
         if(isConnect(al)){
             continue;
         }
+
+        //3. if not connect, restore edge.
         else{
             DList* obj = &(al->list[from]);
             Dinsert(obj,to);
             obj = &(al->list[to]);
             Dinsert(obj,from);
             al->num_edge++;
+            PEnqueue(&pq_save,data);
         }
         //2.1 success = continue
         //2.2 fail = undo delete and continue
+    }
+    while(!isPQEmpty(&pq_save)){
+        PEnqueue(&pq,PDequeue(&pq_save));
     }
 }
