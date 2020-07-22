@@ -70,8 +70,8 @@ void FreeGraph(ALGraph* al){
 }
 
 
-int haveVisited(int list [], int k){
-    if(list[k]==1) return 1;
+int haveVisited(ALGraph* al, int k){
+    if(al->visitinfo[k]==1) return 1;
     else return 0;
 }
 void VisitVert(ALGraph* al, int visit){
@@ -80,16 +80,13 @@ void VisitVert(ALGraph* al, int visit){
 }
 
 void DFS(ALGraph* al,int start){
-    DData data;
+    int nextV;
     DList * obj;
     Stack stack;
     
-    
+    Stackinit(&stack);
     for(int i = 0 ; i < al->num_vert; i++){
-        DFirst(&(al->list[i]),&data);
-    }
-    
-    for(int i = 0 ; i < al->num_vert ; i ++){
+        DFirst(&(al->list[i]),&nextV);
         al->visitinfo[i]=0;
     }
 
@@ -97,19 +94,18 @@ void DFS(ALGraph* al,int start){
 
     /*
     int next,origin;
-    Stackinit(&stack);
 
     origin=start;
     next=start;
     
-    Push(&stack,origin);
-    VisitVert(al,next);
-    obj=&(al->list[next]);
+    Push(&stack,start);
+    VisitVert(al,start);
+    obj=&(al->list[start]);
 
         
     origin=Peek(&stack);
 
-    while(haveVisited(al->visitinfo,next)){//What's next?
+    while(haveVisited(al,next)){//What's next?
         DNext(obj,&next);
     }
     obj=&(al->list[next]);
@@ -128,15 +124,15 @@ void DFS(ALGraph* al,int start){
         origin=next;
         
         DFirst(obj,&next);
-        if(!haveVisited(al->visitinfo,next)){ //Yes Next
+        if(!haveVisited(al,next)){ //Yes Next
             Push(&stack,origin);
             VisitVert(al,next);
             obj=&(al->list[next]);
             continue;
         }
 
-        while(haveVisited(al->visitinfo,next)){//What's next?
-            if(!haveVisited(al->visitinfo,next)){ //Yes Next
+        while(DNext(obj,&next)){//What's next?
+            if(!haveVisited(al,next)){ //Yes Next
                 Push(&stack,origin);
                 VisitVert(al,next);
                 obj=&(al->list[next]);
@@ -153,30 +149,26 @@ void DFS(ALGraph* al,int start){
     //따라서 isempty의 의미는 마지막 노드(시작노드)가 더이상 갈 곳이 없어 pop하여 탐색이 종료된 경우를 의미함
     //위 방식과 다르게 가상의 노드를 참조하는 경우는 없음. 하지만 초기값 설정을 위해 start를 push함
     //다음 노드가 어디인지만 판단하면 되므로 현재 노드를 가리키는 origin 변수는 필요 없음.
-    int next;
-    Stackinit(&stack);
-
-    next = start;
-
-    Push(&stack,next);
-    VisitVert(al,next);
-    obj=&(al->list[next]);
+  
+    Push(&stack,start);
+    VisitVert(al,start);
+    obj=&(al->list[start]);
     
     big:
     while(!isEmpty(&stack)){
-        DFirst(obj,&next);
-        if(!haveVisited(al->visitinfo,next)){ //Yes Next
-            Push(&stack,next);
-            VisitVert(al,next);
-            obj=&(al->list[next]);
+        DFirst(obj,&nextV);
+        if(!haveVisited(al,nextV)){ //Yes Next
+            Push(&stack,nextV);
+            VisitVert(al,nextV);
+            obj=&(al->list[nextV]);
             continue;
         }
 
-        while(DNext(obj,&next)){//What's next?
-            if(!haveVisited(al->visitinfo,next)){ //Yes Next
-            Push(&stack,next);
-            VisitVert(al,next);
-            obj=&(al->list[next]);
+        while(DNext(obj,&nextV)){//What's next?
+            if(!haveVisited(al,nextV)){ //Yes Next
+            Push(&stack,nextV);
+            VisitVert(al,nextV);
+            obj=&(al->list[nextV]);
             goto big; //which means continute big loop
             }
         }
@@ -184,8 +176,8 @@ void DFS(ALGraph* al,int start){
         //if program reaches here, it means that there is No next to go.
         Pop(&stack);
         if(!isEmpty(&stack)){
-            next=Peek(&stack);
-            obj=&(al->list[next]);    
+            nextV=Peek(&stack);
+            obj=&(al->list[nextV]);    
         }
         
     }
@@ -211,13 +203,13 @@ void BFS(ALGraph* al, int start){
         obj=&(al->list[nextV]);
 
         if(DFirst(obj,&nextV)){
-            if(!haveVisited(al->visitinfo,nextV)){
+            if(!haveVisited(al,nextV)){
                 VisitVert(al,nextV);
                 enqueue(&alque,nextV);
             }
 
             while(DNext(obj,&nextV)){
-                if(!haveVisited(al->visitinfo,nextV)){
+                if(!haveVisited(al,nextV)){
                     VisitVert(al,nextV);
                     enqueue(&alque,nextV);
                 }
