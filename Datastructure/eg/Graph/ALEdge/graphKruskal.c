@@ -78,22 +78,65 @@ void VisitVert(ALGraph* al, int visit){
     al->visitinfo[visit]=1;
     printf("%c Refered.\n",'A'+visit);
 }
-
-void DFS(ALGraph* al,int start){
+void DFS_ver1(ALGraph* al, int start){
+    //이 방식은 다음노드 push, 다음노드 visit, 과거노드 회수를 pop & peek로 설정해 구성한경우
+    //peek는 현재 노드를 의미하며 pop&peek할 경우 과거노드를 회수할 수 있음
+    //따라서 isempty의 의미는 마지막 노드(시작노드)가 더이상 갈 곳이 없어 pop하여 탐색이 종료된 경우를 의미함
+    //위 방식과 다르게 가상의 노드를 참조하는 경우는 없음. 하지만 초기값 설정을 위해 start를 push함
+    //다음 노드가 어디인지만 판단하면 되므로 현재 노드를 가리키는 origin 변수는 필요 없음.
     int nextV;
-    DList * obj;
+    DList* obj;
     Stack stack;
-    
     Stackinit(&stack);
-    for(int i = 0 ; i < al->num_vert; i++){
+    
+    for(int i = 0 ; i < al->num_vert; i ++){
         DFirst(&(al->list[i]),&nextV);
         al->visitinfo[i]=0;
     }
 
+    Push(&stack, start);
+    VisitVert(al,start);
+    obj=&(al->list[start]);
+    big:
+    while (!isEmpty(&stack)){
+        DFirst(obj,&nextV);
+        if(!haveVisited(al,nextV)){
+            Push(&stack,nextV);
+            VisitVert(al,nextV);
+            obj=&(al->list[nextV]);
+            continue;
+        }
+        while(DNext(obj,&nextV)){
+            if(!haveVisited(al,nextV)){
+                Push(&stack,nextV);
+                VisitVert(al,nextV);
+                obj=&(al->list[nextV]);
+                goto big;
+            }
+        }
+        Pop(&stack);
+        if(!isEmpty(&stack)){
+            nextV=Peek(&stack);
+            obj=&(al->list[nextV]);
+        }
+    }
     
-
-    /*
+}
+void DFS_ver2(ALGraph* al,int start){
+   //이 방식은 현재노드 push, 과거 노드 pop, 과거노드 peek(열람,쓸일 없음)
+   //따라서 과거 node pop을 할 경우가 되는경우는 현재 노드에 갈 곳이 없는경우.
+   //isempty는 돌아갈 곳이 없는 경우가 됨.
+   //start로 되돌아간 경우, isempty에 걸려 탈출.
+   //현재 노드에 갈 곳이 없는 경우, 과거로 되돌아가려면 start에서 갈곳을 만들어야함
+   //따라서 가상의 시작노드를 만들어 가상 노드가 시작 노드를 가리키고 있도록함.    
     int next,origin;
+    Stack stack;
+    DList* obj;
+    Stackinit(&stack);
+    for(int i = 0 ; i < al->num_vert; i ++){
+        DFirst(&(al->list[i]),&next);
+        al->visitinfo[i]=0;
+    }
 
     origin=start;
     next=start;
@@ -102,23 +145,16 @@ void DFS(ALGraph* al,int start){
     VisitVert(al,start);
     obj=&(al->list[start]);
 
-        
     origin=Peek(&stack);
-
     while(haveVisited(al,next)){//What's next?
         DNext(obj,&next);
     }
-    obj=&(al->list[next]);
-    printf("%c Refered.\n",'A'+next);
 
-    */
-   //원래 구성하던 방식은 현재노드 push, 과거 노드 pop, 과거노드 peek(열람,쓸일 없음)
-   //따라서 과거 node pop을 할 경우가 되는경우는 현재 노드에 갈 곳이 없는경우.
-   //isempty는 돌아갈 곳이 없는 경우가 됨.
-   //start로 되돌아간 경우, isempty에 걸려 탈출.
-   //현재 노드에 갈 곳이 없는 경우, 과거로 되돌아가려면 start에서 갈곳을 만들어야함
-   //따라서 가상의 시작노드를 만들어 가상 노드가 시작 노드를 가리키고 있도록함.
-   /*아래 방식이 위에서 기술한 논리
+    Push(&stack,origin);
+    VisitVert(al,next);
+    obj=&(al->list[next]);
+
+   
     big:
     while(!isEmpty(&stack)){
         origin=next;
@@ -143,43 +179,32 @@ void DFS(ALGraph* al,int start){
         next=Pop(&stack);
         obj=&(al->list[next]);
         }
-    */
-    //아래 방식은 다음노드 push, 다음노드 visit, 과거노드 회수를 pop & peek로 설정해 구성한경우
-    //peek는 현재 노드를 의미하며 pop&peek할 경우 과거노드를 회수할 수 있음
-    //따라서 isempty의 의미는 마지막 노드(시작노드)가 더이상 갈 곳이 없어 pop하여 탐색이 종료된 경우를 의미함
-    //위 방식과 다르게 가상의 노드를 참조하는 경우는 없음. 하지만 초기값 설정을 위해 start를 push함
-    //다음 노드가 어디인지만 판단하면 되므로 현재 노드를 가리키는 origin 변수는 필요 없음.
-  
-    Push(&stack,start);
-    VisitVert(al,start);
-    obj=&(al->list[start]);
-    
-    big:
-    while(!isEmpty(&stack)){
-        DFirst(obj,&nextV);
-        if(!haveVisited(al,nextV)){ //Yes Next
-            Push(&stack,nextV);
-            VisitVert(al,nextV);
-            obj=&(al->list[nextV]);
-            continue;
-        }
+}
 
-        while(DNext(obj,&nextV)){//What's next?
-            if(!haveVisited(al,nextV)){ //Yes Next
-            Push(&stack,nextV);
-            VisitVert(al,nextV);
-            obj=&(al->list[nextV]);
-            goto big; //which means continute big loop
-            }
+void DFS_ver3(ALGraph* al,int start, int flag){//재귀함수버전
+    int origin,next;
+    if(flag>=1){
+        for(int i = 0 ; i < al->num_vert ; i++){
+            DFirst(&(al->list[i]),&origin);
+            al->visitinfo[i]=0;
         }
+        VisitVert(al,start);
+    }
 
-        //if program reaches here, it means that there is No next to go.
-        Pop(&stack);
-        if(!isEmpty(&stack)){
-            nextV=Peek(&stack);
-            obj=&(al->list[nextV]);    
+    origin=start;
+    DList* obj = &(al->list[start]);
+
+    DFirst(obj,&next);
+    if(!haveVisited(al,next)){ //Yes Next
+        VisitVert(al,next);
+        DFS_ver3(al,next,0);
+    }
+
+    while(DNext(obj,&next)){//What's next?
+        if(!haveVisited(al,next)){ //Yes Next
+            VisitVert(al,next);
+            DFS_ver3(al,next,0);
         }
-        
     }
 }
 
@@ -220,7 +245,7 @@ void BFS(ALGraph* al, int start){
 }
 
 int isConnect(ALGraph* al){
-    DFS(al,A);
+    DFS_ver3(al,A,1);
     for(int i = 0 ; i < al->num_vert ; i ++){
         if(al->visitinfo[i]==0){
             return 0;

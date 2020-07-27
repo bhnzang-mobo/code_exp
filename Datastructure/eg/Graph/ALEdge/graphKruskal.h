@@ -26,6 +26,8 @@ void FreeGraph(ALGraph*);
 void ConKruskal(ALGraph* al);
 void ShowGraphEdgeWeightInfo(ALGraph * al);
 void BFS(ALGraph*,int);
-void DFS(ALGraph*,int);
+void DFS_ver1(ALGraph*,int);
+void DFS_ver2(ALGraph*,int);
+void DFS_ver3(ALGraph*,int,int);
 
 #endif 
