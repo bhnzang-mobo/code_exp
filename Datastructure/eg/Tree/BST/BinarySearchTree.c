@@ -52,9 +52,11 @@ void BSTdelete(btNode** bst, bstdata data){
         delpnode=delnode;
         delnode= delpnode->data>data?GetLeftSubTree(delpnode):GetRightSubTree(delpnode);
     }
+    if(delpnode!=NULL && delnode==NULL){
+        return;//There is no node with data. No deletion occur.
+    }
     //Replace node search
     btNode* repnode,* prepnode;
-    
     if(delnode->left!=NULL){
         prepnode=delnode;
         repnode=prepnode->left;
