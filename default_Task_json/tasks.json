@@ -5,12 +5,13 @@
             "type": "shell",
             "label": "Build",
             "command": "C:\\MinGW\\bin\\gcc.exe",
-            "args": [
-                "-g",
-                "${fileDirname}\\*.c",
-                "-o",
-                "${fileDirname}\\test.exe"
-            ],
+          "args": [
+            "-Wl,--stack,16777216",
+            "-g",
+            "${fileDirname}\\*.c",
+            "-o",
+            "${fileDirname}\\test.exe"
+          ],
             "options": {
                 "cwd": "C:\\MinGW\\bin"
             },

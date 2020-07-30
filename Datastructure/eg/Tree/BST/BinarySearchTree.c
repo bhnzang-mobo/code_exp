@@ -7,22 +7,20 @@ void BSTinit(btNode** pbstroot){
 void BSTinsert(btNode** bstroot,bstdata data){
     btNode* nnode = MakeBTNode();
     SetData(nnode,data);
-    btNode * cnode = *bstroot;
-    if(*bstroot == NULL){
-        *bstroot = nnode;
-    }
-    else{
-        btNode ** next;
-        next = &cnode;
-        while(*next!=NULL){
-            if(cnode->data == data){//Primary Key
-                return;
-            }
-            cnode = *next;
-            next= cnode->data>data?&(cnode->left):&(cnode->right);
+    btNode ** cnode = bstroot;
+
+    btNode ** next;
+    next = cnode;
+
+    while(*next!=NULL){
+        if((*cnode)->data == data){//Primary Key
+            return;
         }
-        *next=nnode;//if-then statement removed.
+        cnode = next;
+        next= (*cnode)->data>data?&((*cnode)->left):&((*cnode)->right);
     }
+
+    *next=nnode;//if-then statement removed.
 }
 bstdata BSTGetNodeData(btNode* bstroot){
     return bstroot->data;
