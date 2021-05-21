@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidConfiguredLogFilters">
+    <filters>
+      <filter>
+        <option name="logLevel" value="verbose" />
+        <option name="logMessagePattern" value="" />
+        <option name="logTagPattern" value="firbase" />
+        <option name="name" value="Unnamed-1" />
+        <option name="packageNamePattern" value="" />
+        <option name="pid" value="" />
+      </filter>
+    </filters>
+  </component>
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="debug" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d0d45735-ebfa-4c88-8994-766d33d7937f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../C++study/lab/server/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../C++study/lab/server/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Datastructure/eg/Tree/AVL/BinarySearchTree.c" beforeDir="false" afterPath="$PROJECT_DIR$/../Datastructure/eg/Tree/AVL/BinarySearchTree.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Datastructure/eg/Tree/BST/BinarySearchTree.c" beforeDir="false" afterPath="$PROJECT_DIR$/../Datastructure/eg/Tree/BST/BinarySearchTree.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Datastructure/eg/Tree/BST/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../Datastructure/eg/Tree/BST/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Datastructure/eg/Tree/BST/test.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Datastructure/eg/Tree/BST/test.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../default_Task_json/tasks.json" beforeDir="false" afterPath="$PROJECT_DIR$/../default_Task_json/tasks.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jsonCreator/.vscode/tasks.json" beforeDir="false" afterPath="$PROJECT_DIR$/../jsonCreator/.vscode/tasks.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jsonCreator/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../jsonCreator/main.c" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[SerialNumber@230bd310610c7ece]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/app">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Arduino" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Arduino" type="f1a62948:ProjectNode" />
+                <item name="Arduino" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Arduino" type="f1a62948:ProjectNode" />
+                <item name="Arduino" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Arduino" type="f1a62948:ProjectNode" />
+                <item name="Arduino" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build setup" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Arduino" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Arduino" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Arduino" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Arduino" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="layoutResourceFile_vertical" />
+        <option value="Class" />
+        <option value="resourceFile" />
+        <option value="layoutResourceFile" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/gradle.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1sioDn0CS9tRo7ZWa4jbPz2D3u9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="SerialNumber@230bd310610c7ece" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-05-21T04:22:22.957474800Z" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/layout" />
+    <property name="project.structure.last.edited" value="SDK Location" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\bhnza\Desktop\code_exp\Arduino\app" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\bhnza\Desktop\code_exp\Arduino\app\src\main\res\layout" />
+      <recent name="C:\Users\bhnza\Desktop\code_exp\Arduino\app\src\main\res\drawable" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Android App.app">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="Arduino.app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/bhnza/Desktop/code_exp/Arduino/app [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/app" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="C:/Users/bhnza/Desktop/code_exp/Arduino/app [signingReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/app" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="signingReport" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.C:/Users/bhnza/Desktop/code_exp/Arduino/app [build]" />
+        <item itemvalue="Gradle.C:/Users/bhnza/Desktop/code_exp/Arduino/app [signingReport]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d0d45735-ebfa-4c88-8994-766d33d7937f" name="Default Changelist" comment="" />
+      <created>1619518708122</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1619518708122</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="509" y="286" key="#PSD" timestamp="1621526154912">
+      <screen x="65" y="0" width="1855" height="1080" />
+    </state>
+    <state x="509" y="286" key="#PSD/65.0.1855.1080@65.0.1855.1080" timestamp="1621526154912" />
+    <state x="797" y="245" key="#com.intellij.ide.util.MemberChooser" timestamp="1621526472993">
+      <screen x="65" y="0" width="1855" height="1080" />
+    </state>
+    <state x="797" y="245" key="#com.intellij.ide.util.MemberChooser/65.0.1855.1080@65.0.1855.1080" timestamp="1621526472993" />
+    <state x="470" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1621520187623">
+      <screen x="65" y="0" width="1855" height="1080" />
+    </state>
+    <state x="470" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/65.0.1855.1080@65.0.1855.1080" timestamp="1621520187623" />
+    <state x="157" y="92" width="1671" height="896" key="AVDManager" timestamp="1621507390186">
+      <screen x="65" y="0" width="1855" height="1080" />
+    </state>
+    <state x="157" y="92" width="1671" height="896" key="AVDManager/65.0.1855.1080@65.0.1855.1080" timestamp="1621507390186" />
+    <state width="1812" height="295" key="GridCell.Tab.0.bottom" timestamp="1621584773053">
+      <screen x="65" y="0" width="1855" height="1080" />
+    </state>
+    <state width="1812" height="295" key="GridCell.Tab.0.bottom/65.0.1855.1080@65.0.1855.1080" timestamp="1621584773053" />
+    <state width="1812" height="295" key="GridCell.Tab.0.center" timestamp="1621584773052">
+      <screen x="65" y="0" width="1855" height="1080" />
+    </state>
+    <state width="1812" height="295" key="GridCell.Tab.0.center/65.0.1855.1080@65.0.1855.1080" timestamp="1621584773052" />
+    <state width="1812" height="295" key="GridCell.Tab.0.left" timestamp="1621584773052">
+      <screen x="65" y="0" width="1855" height="1080" />
+    </state>
+    <state width="1812" height="295" key="GridCell.Tab.0.left/65.0.1855.1080@65.0.1855.1080" timestamp="1621584773052" />
+    <state width="1812" height="295" key="GridCell.Tab.0.right" timestamp="1621584773053">
+      <screen x="65" y="0" width="1855" height="1080" />
+    </state>
+    <state width="1812" height="295" key="GridCell.Tab.0.right/65.0.1855.1080@65.0.1855.1080" timestamp="1621584773053" />
+    <state width="1812" height="295" key="GridCell.Tab.1.bottom" timestamp="1621584773053">
+      <screen x="65" y="0" width="1855" height="1080" />
+    </state>
+    <state width="1812" height="295" key="GridCell.Tab.1.bottom/65.0.1855.1080@65.0.1855.1080" timestamp="1621584773053" />
+    <state width="1812" height="295" key="GridCell.Tab.1.center" timestamp="1621584773053">
+      <screen x="65" y="0" width="1855" height="1080" />
+    </state>
+    <state width="1812" height="295" key="GridCell.Tab.1.center/65.0.1855.1080@65.0.1855.1080" timestamp="1621584773053" />
+    <state width="1812" height="295" key="GridCell.Tab.1.left" timestamp="1621584773053">
+      <screen x="65" y="0" width="1855" height="1080" />
+    </state>
+    <state width="1812" height="295" key="GridCell.Tab.1.left/65.0.1855.1080@65.0.1855.1080" timestamp="1621584773053" />
+    <state width="1812" height="295" key="GridCell.Tab.1.right" timestamp="1621584773053">
+      <screen x="65" y="0" width="1855" height="1080" />
+    </state>
+    <state width="1812" height="295" key="GridCell.Tab.1.right/65.0.1855.1080@65.0.1855.1080" timestamp="1621584773053" />
+    <state x="493" y="184" key="SettingsEditor" timestamp="1621508338188">
+      <screen x="65" y="0" width="1855" height="1080" />
+    </state>
+    <state x="493" y="184" key="SettingsEditor/65.0.1855.1080@65.0.1855.1080" timestamp="1621508338188" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/arduino/Popup_edit.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/arduino/GardenAdapter.java</url>
+          <line>123</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/arduino/GardenAdapter.java</url>
+          <line>112</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="app">
+        <watch expression="fab1" language="JAVA" />
+        <watch expression="fab" language="JAVA" />
+        <watch expression="myimage" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>myimage</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>fab</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>fab1</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
